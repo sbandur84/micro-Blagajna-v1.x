@@ -30,21 +30,20 @@ public class AppLocal {
     /**
      *
      */
-    public static final String APP_NAME = "uniCenta oPOS";
+    public static final String APP_NAME = "µBLAGAJNA";
 
     /**
      *
      */
-    public static final String APP_ID = "unicentaopos";
+    public static final String APP_ID = "mikroblagajna";
 
     /**
      *
      */
-    public static final String APP_VERSION = "3.70";
+    public static final String APP_VERSION = "1.0";
 
-//    public static final String APP_IDJL = "Unicenta John L's changes";    
-//    public static final String APP_VERSIONJL ="1.04";
-//    public static final String APP_VERSIONJLCORE="130703";
+
+    public static final String APP_VERSION_BUILD="100";
   
   
     // private static List<ResourceBundle> m_messages;
