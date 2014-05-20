@@ -22,11 +22,11 @@
 <output>   
     <display>
         <line>
-            <text align="left" length="10">Total:</text>
+            <text align="left" length="10">Za plačilo:</text>
             <text align="right" length="10">${ticket.printTotal()}</text>
         </line>
         <line>
-           <text align="center" length="20">Thank You for your custom</text>
+           <text align="center" length="20">Hvala za nakup</text>
         </line>
     </display>
 </output>

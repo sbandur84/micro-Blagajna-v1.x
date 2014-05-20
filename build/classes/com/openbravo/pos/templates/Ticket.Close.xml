@@ -48,7 +48,7 @@ if(isCash) {
      JOptionPane pane = new JOptionPane();
      pane.setMessage(FontText);
      pane.setPreferredSize( new Dimension(450,150));
-     JDialog dialog = pane.createDialog("Cash payment");
+     JDialog dialog = pane.createDialog("Gotovinsko plačilo");
     new Thread(new Runnable() { void run() {
         dialog.show();
     } }).start();

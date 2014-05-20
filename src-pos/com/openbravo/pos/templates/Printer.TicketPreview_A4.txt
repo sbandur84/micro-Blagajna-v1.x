@@ -3,44 +3,44 @@
 <output>
 
 <display>
-	<line><text align="left" length="10">Total</text><text align="right" length="10">${ticket.printTotal()}</text></line>
-	<line><text align="center" length="20">Thank you for your custom</text></line>
+	<line><text align="left" length="10">Za plačilo</text><text align="right" length="10">${ticket.printTotal()}</text></line>
+	<line><text align="center" length="20">Hvala za nakup</text></line>
 </display>
 
 <ticket>
         	<image>Printer.Ticket.Logo</image>
        	<line></line>
-            	<line><text align="center" length="105">Tax Invoice</text></line>
-           	<line><text align="center" length="105">Address 1</text></line>
-       	<line><text align="center" length="105">Address 2</text></line>
-        	<line><text align="center" length="105">PostalCode</text></line>
-        	<line><text align="center" length="105">Country</text></line>
-        	<line><text align="center" length="105">ABN: 12 345 6789</text></line>
+            	<line><text align="center" length="105">Smikro org</text></line>
+           	<line><text align="center" length="105">Marjeta na Dravskem polju</text></line>
+       	<line><text align="center" length="105">Kidričeva ulica 1</text></line>
+        	<line><text align="center" length="105">Poštna št: 2206 Marjeta na Dravskem polju</text></line>
+        	<line><text align="center" length="105">Slovenija</text></line>
+        	<line><text align="center" length="105">Nova KBM: 040 394 8736 733</text></line>
         	<line></line>
-        	<line><text align="center" length="105">www.mywebURL.com</text></line>
+        	<line><text align="center" length="105">www.smikro.org</text></line>
 
 	#if (${ticket.ticketType} == 0)
-		<line><text align="left" length="15">Receipt:</text><text>${ticket.printId()}</text></line>
+		<line><text align="left" length="15">Račun:</text><text>${ticket.printId()}</text></line>
 	#end
 
 	#if (${ticket.ticketType} == 1)
-		<line><text align="left" length="15">Refund:</text><text>${ticket.printId()}</text></line>
+		<line><text align="left" length="15">Vračilo:</text><text>${ticket.printId()}</text></line>
 	#end
-		<line><text align="left" length="15">Date:</text><text>${ticket.printDate()}</text></line>
+		<line><text align="left" length="15">Datum:</text><text>${ticket.printDate()}</text></line>
 
 	#if ($ticket.getCustomer())
-		<line><text align="left" length="15">Customer:</text><text>${ticket.getCustomer().printName()}</text></line>
-		<line><text align="left" length="15">Account #:</text><text>${ticket.getCustomer().printTaxid()}</text></line>
-		<line><text align="left" length="15">Current Debt:</text><text>${ticket.getCustomer().printCurDebt()}</text></line>
+		<line><text align="left" length="15">Stranka:</text><text>${ticket.getCustomer().printName()}</text></line>
+		<line><text align="left" length="15">ID za DDV:</text><text>${ticket.getCustomer().printTaxid()}</text></line>
+		<line><text align="left" length="15">Trenutni dolg:</text><text>${ticket.getCustomer().printCurDebt()}</text></line>
 	#end
 
 	#if (${tickettext.place} != ${place})
-		<line><text align="left" length="15">Table/Room:</text><text>${place}</text></line>
+		<line><text align="left" length="15">Miza/Soba:</text><text>${place}</text></line>
 	#end
         
-		<line><text align="left" length="15">Served by:</text><text>${ticket.printUser()}</text></line>
+		<line><text align="left" length="15">Blagajnik:</text><text>${ticket.printUser()}</text></line>
 		<line></line>
-		<line><text align ="left" length="83">Item</text><text align ="right" length="10">Price</text><text align ="right" length="5">Qty</text><text align ="right" length="10">Value</text></line>
+		<line><text align ="left" length="83">Izdelek</text><text align ="right" length="10">Cena</text><text align ="right" length="5">Kol.</text><text align ="right" length="10">Vrednost</text></line>
 		<line><text align="left" length="108">------------------------------------------------------------------------------------------------------------</text></line>
                 
 #foreach ($ticketline in $ticket.getLines())
@@ -61,74 +61,87 @@
 	#end
 #end
 	<line><text align="left" length="108">------------------------------------------------------------------------------------------------------------</text></line>
-	<line><text>Items count: </text><text align ="left" length="14">${ticket.printArticlesCount()}</text></line>
+	<line><text>Število artiklov: </text><text align ="left" length="14">${ticket.printArticlesCount()}</text></line>
 
 #foreach ($paymentline in $ticket.payments)
 
 	#if ($paymentline.name == "cash")
-		<line><text bold="true">Cash</text></line>
-	        <line><text align="left" length="22">Tendered:</text><text align ="right" length="20">${paymentline.printPaid()}</text></line>
+		<line><text bold="true">Gotovina</text></line>
+	        <line><text align="left" length="22">Prejeto:</text><text align ="right" length="20">${paymentline.printPaid()}</text></line>
 	#end
           	
 	#if ($paymentline.name == "cashrefund")
-            	<line><text bold="true">Refund</text></line>
+            	<line><text bold="true">Storno</text></line>
 		<line><text align ="right" length="42">${paymentline.printTotal()}</text></line>
 	#end
 	
 	#if ($paymentline.name == "magcard")
-		<line><text bold="true">Card</text></line>
+		<line><text bold="true">Kartica</text></line>
 		<line><text align ="right" length="42">${paymentline.printTotal()}</text></line>
 	#end
 
 	#if ($paymentline.name == "magcardrefund")
-		<line><text bold="true">Card Refund</text></line>
+		<line><text bold="true">Storno kartica</text></line>
 		<line><text align ="right" length="42">${paymentline.printTotal()}</text></line>
 	#end
 
 	#if ($paymentline.name == "cheque")
 		<line></line>
-		<line><text bold="true">Cheque</text></line>
+		<line><text bold="true">Ček</text></line>
 		<line><text align ="right" length="42">${paymentline.printTotal()}</text></line>
 	#end
 
 	#if ($paymentline.name == "chequerefund")
 		<line></line>
-		<line><text bold="true">Cheque Refund</text></line>
+		<line><text bold="true">Storno čeka</text></line>
 		<line><text align ="right" length="42">${paymentline.printTotal()}</text></line>
 	#end
 
 	#if ($paymentline.name == "paperin")
 		<line></line>
-		<line><text bold="true">Note</text></line>
+		<line><text bold="true">Kupon</text></line>
 		<line><text align ="right" length="42">${paymentline.printTotal()}</text></line>
 	#end
 
 	#if ($paymentline.name == "paperout")
 		<line></line>
-		<line><text bold="true">Note Refund</text></line>
+		<line><text bold="true">Storno kupon</text></line>
 		<line><text align ="right" length="42">${paymentline.printTotal()}</text></line>
 	#end
 
 	#if ($paymentline.name == "free")
 		<line></line>
-		<line><text bold="true">Free</text></line>
+		<line><text bold="true">Darilo</text></line>
 		<line><text align ="right" length="42">${paymentline.printTotal()}</text></line>
 	#end
 	
 	#if ($paymentline.name == "debt")
 		<line></line>
-		<line><text bold="true">On Account</text></line>
+		<line><text bold="true">Dolg</text></line>
 		<line><text align ="right" length="42">${paymentline.printTotal()}</text></line>
 	#end
 #end
 
 	<line></line>
-	<line><text align ="left" length="16">Taxable Items:</text><text align ="right" length="92">${ticket.printSubTotal()}</text></line>
-	<line><text align ="left" length="22">GST Included in total:</text><text align ="right" length="86">${ticket.printTax()}</text></line>
+	<line><text align ="left" length="16">Skupaj brez DDV:</text><text align ="right" length="92">${ticket.printSubTotal()}</text></line>
+	<line><text align ="left" length="22">DDV:</text><text align ="right" length="86">${ticket.printTax()}</text></line>
 	<line></line>
-
+<line><text bold="true">Specifikacija DDV</text></line>
+    <line>
+        <text align ="left" length="18">Stopnja</text>
+        <text align ="right" length="12">Brez DDV</text>
+        <text align ="right" length="12">DDV</text>
+    </line>
+	<line><text bold="true">--------------------------------------------</text></line>
+    #foreach ($taxinfo in $taxes)
+        #set( $taxline = $ticket.getTaxLine($taxinfo))
+       <line>
+            <text align ="left" length="18">${taxline.getTaxInfo()}</text>
+            <text align ="right" length="12">${taxline.printSubTotal()}</text>
+            <text align ="right" length="12">${taxline.printTax()}</text>
+        </line> 
 	<line></line>
-	<line size="1"><text align ="left" length="16" bold="true">Total</text><text align ="right" length="92" bold="true">${ticket.printTotal()}</text></line>
+	<line size="1"><text align ="left" length="16" bold="true">Za plačilo:</text><text align ="right" length="92" bold="true">${ticket.printTotal()}</text></line>
 
 </ticket>
 

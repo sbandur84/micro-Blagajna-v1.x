@@ -32,14 +32,14 @@
 	<!-- <button key="button.scharge" image="img.heart" code="script.ServiceCharge"/> -->
                 
 	<!-- SET Line or Total Discount (Default=TotalDiscount= ENABLED) -->
-	<button key="button.totaldiscount" image="img.discount" code="script.totaldiscount"/>
-	<!-- <button key="button.linediscount" image="img.discount" code="script.linediscount"/>  -->
+	<!-- <button key="button.totaldiscount" image="img.discount" code="script.totaldiscount"/> -->
+	<button key="button.linediscount" image="img.discount" code="script.linediscount"/>  
 
 	<!-- SET Waiter's name (Default=DISABLED) -->
-	<!-- <button key="button.setperson" image="img.user" code="script.SetPerson"/>  -->
+	<!--<button key="button.setperson" image="img.user" code="script.SetPerson"/>-->
 
 	<!-- SET Remote Printer (Default=DISABLED) Not required for John L changes--> 
-	<!-- <button key="button.sendorder" image="img.kit_print" code="script.SendOrder"/>  -->
+	<!-- <button key="button.sendorder" image="img.kit_print" code="script.SendOrder"/>--> 
 
 	<!-- SET Ticket Print Preview (Default=ENABLED) -->
     	<button key="button.print" image="img.ticket_print" template="Printer.TicketPreview"/>
@@ -80,8 +80,8 @@
 	<!--  <img-height value="48"/> -->
 
 	<!-- Medium Product button size in Sales screen (Default=ENABLED) -->
-   	<img-width value="80"/>
-	<img-height value="80"/>
+   	<img-width value="120"/>
+	<img-height value="90"/>
     
 <!-- Large Product button size in Sales screen (Default=DISABLED)-->
 	<!-- <img-width value="128"/> -->
@@ -114,6 +114,6 @@
 
          <taxesincluded value="true"/>
          <!-- <taxcategoryid value="001"/> -->
-         <!-- <pricevisible value="true" /> -->
+         <pricevisible value="true" />
          
 </configuration>

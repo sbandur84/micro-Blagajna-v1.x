@@ -27,7 +27,8 @@ import com.openbravo.format.Formats;
 import com.openbravo.pos.ticket.TicketLineInfo;
 import com.openbravo.pos.ticket.TicketProductInfo;
 
-discountrate = sales.getInputValue();
+discountrate = procenti = sales.getInputValue();
+discountrate = discountrate / 100;
 
 index = sales.getSelectedIndex();
 if (index >= 0) {
@@ -37,7 +38,7 @@ if (index >= 0) {
         sdiscount = Formats.PERCENT.formatValue(discountrate);
         ticket.insertLine(index + 1,
             new TicketLineInfo(
-                    "Line Discount " + sdiscount,
+                    "- Popust " + sdiscount,
                     line.getProductTaxCategoryID(),
                     line.getMultiply(),
                     -(double)Math.round(line.getPrice() * discountrate * 100) / 100,

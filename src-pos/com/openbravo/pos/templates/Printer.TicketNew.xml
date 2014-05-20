@@ -22,27 +22,21 @@
 <output>
     <display>
         <line>
-            <text align="left" length="10">Total</text>
+            <text align="left" length="10">Za plačilo</text>
             <text align="right" length="10">${ticket.printTotal()}</text>
         </line>
         <line>
-            <text align="center" length="20">Thank you for your custom</text>
+            <text align="center" length="20">Hvala za nakup</text>
         </line>
     </display>
     <ticket>
         <image>Printer.Ticket.Logo</image>
         <line></line>
         <line>
-            <text align="center" length="42">uniCenta oPOS</text>
+            <text align="center" length="42">mikroBLAGAJNA</text>
         </line>
         <line>
-            <text align="center" length="42">Touch Friendly Point Of Sale</text>
-        </line>
-        <line>
-            <text align="center" length="42">Copyright (c) 2009-2014 uniCenta</text>
-        </line>
-        <line>
-            <text align="center" length="42">Printer.TicketNew</text>
+            <text align="center" length="42">Davčna POS Blagajna na dotik</text>
         </line>
         <line></line>
         #if (${ticket.ticketType} == 0)
