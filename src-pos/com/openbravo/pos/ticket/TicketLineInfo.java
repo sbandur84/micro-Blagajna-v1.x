@@ -426,6 +426,10 @@ public class TicketLineInfo implements SerializableWrite, SerializableRead, Seri
     public TaxInfo getTaxInfo() {
         return tax;
     }
+    
+    public String printTaxName(){
+        return tax.getName();
+    }
 
     /**
      *

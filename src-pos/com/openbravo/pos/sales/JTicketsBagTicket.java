@@ -124,7 +124,7 @@ public class JTicketsBagTicket extends JTicketsBag {
 
         jrbSales.setSelected(true);
         
-        m_jEdit.setVisible(m_App.getAppUserView().getUser().hasPermission("sales.EditTicket"));
+        // BRISANJE RAČUNOV ONEMOGOČENO - FUNKCIJA m_jEdit.setVisible(m_App.getAppUserView().getUser().hasPermission("sales.EditTicket"));
         m_jRefund.setVisible(m_App.getAppUserView().getUser().hasPermission("sales.RefundTicket"));
         m_jPrint.setVisible(m_App.getAppUserView().getUser().hasPermission("sales.PrintTicket"));
              
@@ -244,14 +244,14 @@ public class JTicketsBagTicket extends JTicketsBag {
         
         // imprimo m_ticket
         
-        try {
-            m_jEdit.setEnabled(
-                    m_ticket != null
-                    && (m_ticket.getTicketType() == TicketInfo.RECEIPT_NORMAL || m_ticket.getTicketType() == TicketInfo.RECEIPT_REFUND)
-                    && m_dlSales.isCashActive(m_ticket.getActiveCash()));
-        } catch (BasicException e) {
-            m_jEdit.setEnabled(false);
-        }
+        // BRISANJE RAČUNOV ONEMOGOČENO - FUNKCIJAtry {
+        // BRISANJE RAČUNOV ONEMOGOČENO - FUNKCIJA    m_jEdit.setEnabled(
+        // BRISANJE RAČUNOV ONEMOGOČENO - FUNKCIJA            m_ticket != null
+        // BRISANJE RAČUNOV ONEMOGOČENO - FUNKCIJA            && (m_ticket.getTicketType() == TicketInfo.RECEIPT_NORMAL || m_ticket.getTicketType() == TicketInfo.RECEIPT_REFUND)
+        // BRISANJE RAČUNOV ONEMOGOČENO - FUNKCIJA           && m_dlSales.isCashActive(m_ticket.getActiveCash()));
+        // BRISANJE RAČUNOV ONEMOGOČENO - FUNKCIJA} catch (BasicException e) {
+        // BRISANJE RAČUNOV ONEMOGOČENO - FUNKCIJA    m_jEdit.setEnabled(false);
+        // BRISANJE RAČUNOV ONEMOGOČENO - FUNKCIJA}
         m_jRefund.setEnabled(m_ticket != null && m_ticket.getTicketType() == TicketInfo.RECEIPT_NORMAL);
         m_jPrint.setEnabled(m_ticket != null);
         
@@ -289,7 +289,6 @@ public class JTicketsBagTicket extends JTicketsBag {
         m_jButtons = new javax.swing.JPanel();
         m_jTicketId = new javax.swing.JLabel();
         jButton2 = new javax.swing.JButton();
-        m_jEdit = new javax.swing.JButton();
         m_jRefund = new javax.swing.JButton();
         m_jPrint = new javax.swing.JButton();
         jPanel2 = new javax.swing.JPanel();
@@ -319,13 +318,13 @@ public class JTicketsBagTicket extends JTicketsBag {
         jButton2.setFont(new java.awt.Font("Arial", 0, 11)); // NOI18N
         jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/openbravo/images/search24.png"))); // NOI18N
         jButton2.setText(AppLocal.getIntString("button.print")); // NOI18N
-        jButton2.setToolTipText("Search Tickets");
+        jButton2.setToolTipText("Najdi račun");
         jButton2.setFocusPainted(false);
         jButton2.setFocusable(false);
         jButton2.setMargin(new java.awt.Insets(0, 4, 0, 4));
-        jButton2.setMaximumSize(new java.awt.Dimension(50, 40));
-        jButton2.setMinimumSize(new java.awt.Dimension(50, 40));
-        jButton2.setPreferredSize(new java.awt.Dimension(50, 40));
+        jButton2.setMaximumSize(new java.awt.Dimension(80, 40));
+        jButton2.setMinimumSize(new java.awt.Dimension(80, 40));
+        jButton2.setPreferredSize(new java.awt.Dimension(80, 40));
         jButton2.setRequestFocusEnabled(false);
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -334,34 +333,16 @@ public class JTicketsBagTicket extends JTicketsBag {
         });
         m_jButtons.add(jButton2);
 
-        m_jEdit.setFont(new java.awt.Font("Arial", 0, 11)); // NOI18N
-        m_jEdit.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/openbravo/images/sale_editline.png"))); // NOI18N
-        m_jEdit.setText(AppLocal.getIntString("button.print")); // NOI18N
-        m_jEdit.setToolTipText("Edit current Ticket");
-        m_jEdit.setFocusPainted(false);
-        m_jEdit.setFocusable(false);
-        m_jEdit.setMargin(new java.awt.Insets(0, 4, 0, 4));
-        m_jEdit.setMaximumSize(new java.awt.Dimension(50, 40));
-        m_jEdit.setMinimumSize(new java.awt.Dimension(50, 40));
-        m_jEdit.setPreferredSize(new java.awt.Dimension(50, 40));
-        m_jEdit.setRequestFocusEnabled(false);
-        m_jEdit.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                m_jEditActionPerformed(evt);
-            }
-        });
-        m_jButtons.add(m_jEdit);
-
         m_jRefund.setFont(new java.awt.Font("Arial", 0, 11)); // NOI18N
         m_jRefund.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/openbravo/images/inbox.png"))); // NOI18N
         m_jRefund.setText(AppLocal.getIntString("button.print")); // NOI18N
-        m_jRefund.setToolTipText("Receipt Refund");
+        m_jRefund.setToolTipText("Storno računa");
         m_jRefund.setFocusPainted(false);
         m_jRefund.setFocusable(false);
         m_jRefund.setMargin(new java.awt.Insets(0, 4, 0, 4));
-        m_jRefund.setMaximumSize(new java.awt.Dimension(50, 40));
-        m_jRefund.setMinimumSize(new java.awt.Dimension(50, 40));
-        m_jRefund.setPreferredSize(new java.awt.Dimension(50, 40));
+        m_jRefund.setMaximumSize(new java.awt.Dimension(90, 40));
+        m_jRefund.setMinimumSize(new java.awt.Dimension(90, 40));
+        m_jRefund.setPreferredSize(new java.awt.Dimension(90, 40));
         m_jRefund.setRequestFocusEnabled(false);
         m_jRefund.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -373,7 +354,7 @@ public class JTicketsBagTicket extends JTicketsBag {
         m_jPrint.setFont(new java.awt.Font("Arial", 0, 11)); // NOI18N
         m_jPrint.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/openbravo/images/printer24.png"))); // NOI18N
         m_jPrint.setText(AppLocal.getIntString("button.print")); // NOI18N
-        m_jPrint.setToolTipText("Reprint Receipt");
+        m_jPrint.setToolTipText("Natisni račun");
         m_jPrint.setFocusPainted(false);
         m_jPrint.setFocusable(false);
         m_jPrint.setMargin(new java.awt.Insets(0, 4, 0, 4));
@@ -468,17 +449,6 @@ public class JTicketsBagTicket extends JTicketsBag {
         add(jPanel3, java.awt.BorderLayout.EAST);
     }// </editor-fold>//GEN-END:initComponents
 
-    private void m_jEditActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_m_jEditActionPerformed
-                 
-        m_ticketCopy = m_ticket;        
-        m_TicketsBagTicketBag.showEdit();
-        m_panelticketedit.showCatalog();
-// Indicate that this a ticket in edit mode      
-        m_ticketCopy.setOldTicket(true); 
-        m_panelticketedit.setActiveTicket(m_ticket.copyTicket(), null);  
-        
-    }//GEN-LAST:event_m_jEditActionPerformed
-
     private void m_jPrintActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_m_jPrintActionPerformed
        
         if (m_ticket != null) {
@@ -554,7 +524,6 @@ private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRS
     private javax.swing.JRadioButton jrbRefunds;
     private javax.swing.JRadioButton jrbSales;
     private javax.swing.JPanel m_jButtons;
-    private javax.swing.JButton m_jEdit;
     private com.openbravo.editor.JEditorKeys m_jKeys;
     private javax.swing.JPanel m_jOptions;
     private javax.swing.JPanel m_jPanelTicket;

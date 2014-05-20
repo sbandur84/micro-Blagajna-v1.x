@@ -78,13 +78,13 @@ public class JTicketsBagTicketBag extends javax.swing.JPanel {
         m_jBtnDelete.setFont(new java.awt.Font("Arial", 0, 11)); // NOI18N
         m_jBtnDelete.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/openbravo/images/sale_delete.png"))); // NOI18N
         m_jBtnDelete.setText(AppLocal.getIntString("Button.DeleteTicket")); // NOI18N
-        m_jBtnDelete.setToolTipText("Delete current Ticket");
+        m_jBtnDelete.setToolTipText("Izbriši trenutni račun");
         m_jBtnDelete.setFocusPainted(false);
         m_jBtnDelete.setFocusable(false);
         m_jBtnDelete.setMargin(new java.awt.Insets(0, 4, 0, 4));
-        m_jBtnDelete.setMaximumSize(new java.awt.Dimension(50, 40));
-        m_jBtnDelete.setMinimumSize(new java.awt.Dimension(50, 40));
-        m_jBtnDelete.setPreferredSize(new java.awt.Dimension(50, 40));
+        m_jBtnDelete.setMaximumSize(new java.awt.Dimension(90, 40));
+        m_jBtnDelete.setMinimumSize(new java.awt.Dimension(90, 40));
+        m_jBtnDelete.setPreferredSize(new java.awt.Dimension(90, 40));
         m_jBtnDelete.setRequestFocusEnabled(false);
         m_jBtnDelete.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -96,13 +96,13 @@ public class JTicketsBagTicketBag extends javax.swing.JPanel {
         m_jBtnCancel.setFont(new java.awt.Font("Arial", 0, 11)); // NOI18N
         m_jBtnCancel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/openbravo/images/cancel.png"))); // NOI18N
         m_jBtnCancel.setText(AppLocal.getIntString("Button.Cancel")); // NOI18N
-        m_jBtnCancel.setToolTipText("Cancel Action");
+        m_jBtnCancel.setToolTipText("Prekliči urejanje računa");
         m_jBtnCancel.setFocusPainted(false);
         m_jBtnCancel.setFocusable(false);
         m_jBtnCancel.setMargin(new java.awt.Insets(0, 4, 0, 4));
-        m_jBtnCancel.setMaximumSize(new java.awt.Dimension(50, 40));
-        m_jBtnCancel.setMinimumSize(new java.awt.Dimension(50, 40));
-        m_jBtnCancel.setPreferredSize(new java.awt.Dimension(50, 40));
+        m_jBtnCancel.setMaximumSize(new java.awt.Dimension(80, 40));
+        m_jBtnCancel.setMinimumSize(new java.awt.Dimension(80, 40));
+        m_jBtnCancel.setPreferredSize(new java.awt.Dimension(80, 40));
         m_jBtnCancel.setRequestFocusEnabled(false);
         m_jBtnCancel.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -137,21 +137,20 @@ public class JTicketsBagTicketBag extends javax.swing.JPanel {
 
     }//GEN-LAST:event_m_jBtnCancel1ActionPerformed
 
-    private void m_jBtnDeleteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_m_jBtnDeleteActionPerformed
-        
-        int res = JOptionPane.showConfirmDialog(this, AppLocal.getIntString("message.wannadelete"), AppLocal.getIntString("title.editor"), JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE);
-        if (res == JOptionPane.YES_OPTION) {
-            m_ticketsbagticket.deleteTicket(); 
-             
-        }
-      
-    }//GEN-LAST:event_m_jBtnDeleteActionPerformed
-
     private void m_jBtnCancelActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_m_jBtnCancelActionPerformed
 
         m_ticketsbagticket.canceleditionTicket();
         
     }//GEN-LAST:event_m_jBtnCancelActionPerformed
+
+    private void m_jBtnDeleteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_m_jBtnDeleteActionPerformed
+
+        // BRISANJE RAČUNOV ONEMOGOČENO - FUNKCIJA
+        int res = JOptionPane.showConfirmDialog(this, AppLocal.getIntString("message.wannadelete"), AppLocal.getIntString("title.editor"), JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE);
+        if (res == JOptionPane.YES_OPTION) {
+        m_ticketsbagticket.deleteTicket();
+        }
+    }//GEN-LAST:event_m_jBtnDeleteActionPerformed
     
     
     // Variables declaration - do not modify//GEN-BEGIN:variables

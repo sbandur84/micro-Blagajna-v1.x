@@ -37,20 +37,20 @@
             <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
               <ResourceString bundle="pos_messages.properties" key="Button.DeleteTicket" replaceFormat="AppLocal.getIntString(&quot;{key}&quot;)"/>
             </Property>
-            <Property name="toolTipText" type="java.lang.String" value="Delete current Ticket"/>
+            <Property name="toolTipText" type="java.lang.String" value="Izbri&#x161;i trenutni ra&#x10d;un"/>
             <Property name="focusPainted" type="boolean" value="false"/>
             <Property name="focusable" type="boolean" value="false"/>
             <Property name="margin" type="java.awt.Insets" editor="org.netbeans.beaninfo.editors.InsetsEditor">
               <Insets value="[0, 4, 0, 4]"/>
             </Property>
             <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-              <Dimension value="[50, 40]"/>
+              <Dimension value="[90, 40]"/>
             </Property>
             <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-              <Dimension value="[50, 40]"/>
+              <Dimension value="[90, 40]"/>
             </Property>
             <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-              <Dimension value="[50, 40]"/>
+              <Dimension value="[90, 40]"/>
             </Property>
             <Property name="requestFocusEnabled" type="boolean" value="false"/>
           </Properties>
@@ -69,20 +69,20 @@
             <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
               <ResourceString bundle="pos_messages.properties" key="Button.Cancel" replaceFormat="AppLocal.getIntString(&quot;{key}&quot;)"/>
             </Property>
-            <Property name="toolTipText" type="java.lang.String" value="Cancel Action"/>
+            <Property name="toolTipText" type="java.lang.String" value="Prekli&#x10d;i urejanje ra&#x10d;una"/>
             <Property name="focusPainted" type="boolean" value="false"/>
             <Property name="focusable" type="boolean" value="false"/>
             <Property name="margin" type="java.awt.Insets" editor="org.netbeans.beaninfo.editors.InsetsEditor">
               <Insets value="[0, 4, 0, 4]"/>
             </Property>
             <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-              <Dimension value="[50, 40]"/>
+              <Dimension value="[80, 40]"/>
             </Property>
             <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-              <Dimension value="[50, 40]"/>
+              <Dimension value="[80, 40]"/>
             </Property>
             <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-              <Dimension value="[50, 40]"/>
+              <Dimension value="[80, 40]"/>
             </Property>
             <Property name="requestFocusEnabled" type="boolean" value="false"/>
           </Properties>

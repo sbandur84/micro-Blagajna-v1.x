@@ -104,5 +104,12 @@ public class TicketTaxInfo {
      */
     public String printTotal() {
         return Formats.CURRENCY.formatValue(new Double(getTotal()));
-    }    
+    } 
+    
+    /*
+    VRNE IME DAVKA
+    */
+    public String printTaxName(){
+        return tax.getName();
+    }
 }
