@@ -19,7 +19,7 @@ REM    You should have received a copy of the GNU General Public License
 REM    along with uniCenta oPOS.  If not, see http://www.gnu.org/licenses/>
 REM
 set DIRNAME=%~dp0
-set CP="%DIRNAME%unicentaopos.jar"
+set CP="%DIRNAME%mikroBLAGAJNA.jar"
 set CP=%CP%;"%DIRNAME%lib/jasperreports-4.5.1.jar"
 set CP=%CP%;"%DIRNAME%lib/jcommon-1.0.15.jar"
 set CP=%CP%;"%DIRNAME%lib/jfreechart-1.0.12.jar"
@@ -51,4 +51,4 @@ set CP=%CP%;"%DIRNAME%lib/commons-logging-1.1.jar"
 set CP=%CP%;"%DIRNAME%locales/"
 set CP=%CP%;"%DIRNAME%reports/"
 
-start /B javaw -cp %CP% -Djava.library.path="%DIRNAME%lib/Windows/i368-mingw32" -Ddirname.path="%DIRNAME%./" -splash:unicenta_splash_dark.png com.openbravo.pos.forms.StartPOS %1
+start /B javaw -cp %CP% -Djava.library.path="%DIRNAME%lib/Windows/i368-mingw32" -Ddirname.path="%DIRNAME%./" -zacetni_zaslon.png com.openbravo.pos.forms.StartPOS %1

@@ -3,41 +3,17 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/home/seba/Razvoj/mikroBLAGAJNA-git-master/src-pos/com/openbravo/pos/templates/payment.cash.txt</file>
-            <file>file:/home/seba/Razvoj/mikroBLAGAJNA-git-master/src-pos/com/openbravo/pos/templates/Printer.Ticket_A4.txt</file>
-            <file>file:/home/seba/Razvoj/mikroBLAGAJNA-git-master/src-pos/com/openbravo/pos/templates/Ticket.TicketLineTaxesIncluded.xml</file>
-            <file>file:/home/seba/Razvoj/mikroBLAGAJNA-git-master/src-pos/com/openbravo/pos/templates/event.setline.xml</file>
-            <file>file:/home/seba/Razvoj/mikroBLAGAJNA-git-master/src-pos/com/openbravo/pos/templates/Printer.TicketTotal.xml</file>
-            <file>file:/home/seba/Razvoj/mikroBLAGAJNA-git-master/src-pos/com/openbravo/pos/scripts/Derby-create.sql</file>
-            <file>file:/home/seba/Razvoj/mikroBLAGAJNA-git-master/src-pos/com/openbravo/pos/templates/ticket.setline.txt</file>
-            <file>file:/home/seba/Razvoj/mikroBLAGAJNA-git-master/src-pos/com/openbravo/pos/templates/Printer.TicketPreview_A4.txt</file>
-            <file>file:/home/seba/Razvoj/mikroBLAGAJNA-git-master/src-pos/com/openbravo/pos/templates/window.logo.png</file>
-            <file>file:/home/seba/Razvoj/mikroBLAGAJNA-git-master/src-pos/com/openbravo/pos/templates/Printer.Ticket2.xml</file>
+            <file>file:/home/seba/Razvoj/mikroBLAGAJNA-git-master/src-pos/com/openbravo/pos/sales/JPanelTicketSales.java</file>
+            <file>file:/home/seba/Razvoj/mikroBLAGAJNA-git-master/locales/pos_messages.properties</file>
+            <file>file:/home/seba/Razvoj/mikroBLAGAJNA-git-master/src-pos/com/openbravo/pos/ticket/TicketLineInfo.java</file>
             <file>file:/home/seba/Razvoj/mikroBLAGAJNA-git-master/src-pos/com/openbravo/pos/templates/Printer.Ticket.xml</file>
-            <file>file:/home/seba/Razvoj/mikroBLAGAJNA-git-master/src-pos/com/openbravo/pos/templates/Window.Title.txt</file>
-            <file>file:/home/seba/Razvoj/mikroBLAGAJNA-git-master/src-pos/com/openbravo/pos/forms/AppConfig.java</file>
-            <file>file:/home/seba/Razvoj/mikroBLAGAJNA-git-master/src-pos/com/openbravo/pos/templates/Ticket.Buttons.xml</file>
-            <file>file:/home/seba/Razvoj/mikroBLAGAJNA-git-master/src-pos/com/openbravo/pos/templates/Printer.TicketClose.xml</file>
-            <file>file:/home/seba/Razvoj/mikroBLAGAJNA-git-master/src-pos/com/openbravo/pos/templates/script.linediscount_1.txt</file>
-            <file>file:/home/seba/Razvoj/mikroBLAGAJNA-git-master/src-pos/com/openbravo/pos/templates/Printer.TicketNew.xml</file>
-            <file>file:/home/seba/Razvoj/mikroBLAGAJNA-git-master/src-pos/com/openbravo/pos/templates/event.change.xml</file>
-            <file>file:/home/seba/Razvoj/mikroBLAGAJNA-git-master/src-pos/com/openbravo/pos/templates/Ticket.Close.xml</file>
-            <file>file:/home/seba/Razvoj/mikroBLAGAJNA-git-master/src-pos/com/openbravo/pos/templates/Ticket.Discount.xml</file>
-            <file>file:/home/seba/Razvoj/mikroBLAGAJNA-git-master/src-pos/com/openbravo/pos/forms/AppLocal.java</file>
-            <file>file:/home/seba/Razvoj/mikroBLAGAJNA-git-master/src-pos/com/openbravo/pos/templates/Ticket.SetPerson</file>
-            <file>file:/home/seba/Razvoj/mikroBLAGAJNA-git-master/src-pos/com/openbravo/pos/templates/ticket.removeline.txt</file>
-            <file>file:/home/seba/Razvoj/mikroBLAGAJNA-git-master/src-pos/com/openbravo/pos/templates/ticket.addline.txt</file>
-            <file>file:/home/seba/Razvoj/mikroBLAGAJNA-git-master/src-pos/com/openbravo/pos/templates/Menu.Root.txt</file>
-            <file>file:/home/seba/Razvoj/mikroBLAGAJNA-git-master/src-pos/com/openbravo/pos/templates/Printer.TicketKitchen.xml</file>
-            <file>file:/home/seba/Razvoj/mikroBLAGAJNA-git-master/src-pos/com/openbravo/pos/templates/event.removeline.xml</file>
-            <file>file:/home/seba/Razvoj/mikroBLAGAJNA-git-master/src-pos/com/openbravo/pos/templates/script.linediscount.txt</file>
+            <file>file:/home/seba/Razvoj/mikroBLAGAJNA-git-master/src-pos/com/openbravo/pos/ticket/TaxInfo.java</file>
             <file>file:/home/seba/Razvoj/mikroBLAGAJNA-git-master/src-pos/com/openbravo/pos/templates/Printer.TicketPreview.xml</file>
-            <file>file:/home/seba/Razvoj/mikroBLAGAJNA-git-master/src-pos/com/openbravo/pos/templates/Role.Administrator.xml</file>
-            <file>file:/home/seba/Razvoj/mikroBLAGAJNA-git-master/src-pos/com/openbravo/pos/scripts/MySQL-create.sql</file>
-            <file>file:/home/seba/Razvoj/mikroBLAGAJNA-git-master/src-pos/com/openbravo/pos/templates/event.addline.xml</file>
-            <file>file:/home/seba/Razvoj/mikroBLAGAJNA-git-master/src-pos/com/openbravo/pos/templates/ticket.change.txt</file>
-            <file>file:/home/seba/Razvoj/mikroBLAGAJNA-git-master/src-pos/com/openbravo/pos/templates/Printer.TicketLine.xml</file>
+            <file>file:/home/seba/Razvoj/mikroBLAGAJNA-git-master/locales/Slovenian/reports/com/openbravo/reports/cashregisterlog_messages.properties</file>
+            <file>file:/home/seba/Razvoj/mikroBLAGAJNA-git-master/src-pos/com/openbravo/pos/sales/JTicketCatalogLines.java</file>
+            <file>file:/home/seba/Razvoj/mikroBLAGAJNA-git-master/src-pos/com/openbravo/pos/ticket/TicketTaxInfo.java</file>
             <file>file:/home/seba/Razvoj/mikroBLAGAJNA-git-master/src-pos/com/openbravo/pos/templates/Ticket.Line.xml</file>
+            <file>file:/home/seba/Razvoj/mikroBLAGAJNA-git-master/locales/Slovenian/reports/com/openbravo/reports/cashflow_messages.properties</file>
         </group>
     </open-files>
 </project-private>

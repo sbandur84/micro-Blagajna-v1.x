@@ -61,8 +61,9 @@
           <Properties>
             <Property name="horizontalAlignment" type="int" value="4"/>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/com/openbravo/images/poweredby_uni.png"/>
+              <Image iconType="3" name="/com/openbravo/images/smikro_podpora_logo.png"/>
             </Property>
+            <Property name="alignmentY" type="float" value="0.0"/>
             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
               <Border info="org.netbeans.modules.form.compat2.border.EmptyBorderInfo">
                 <EmptyBorder bottom="0" left="5" right="5" top="0"/>
@@ -134,26 +135,6 @@
                 <Property name="axis" type="int" value="1"/>
               </Layout>
               <SubComponents>
-                <Component class="javax.swing.JLabel" name="jLabel1">
-                  <Properties>
-                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                      <Font name="Arial" size="12" style="0"/>
-                    </Property>
-                    <Property name="horizontalAlignment" type="int" value="0"/>
-                    <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                      <Image iconType="3" name="/com/openbravo/images/unicenta.png"/>
-                    </Property>
-                    <Property name="text" type="java.lang.String" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
-                      <Connection code="&quot;&lt;html&gt;&lt;center&gt;uniCenta oPOS - Touch Friendly Point of Sale&lt;br&gt;&quot; +&#xa;    &quot;Copyright \u00A9 2009-2014 uniCenta &lt;br&gt;&quot; +&#xa;    &quot;http://www.unicenta.com&lt;br&gt;&quot; +&#xa;    &quot;&lt;br&gt;&quot; +&#xa;    &quot;uniCenta oPOS is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.&lt;br&gt;&quot; +&#xa;    &quot;&lt;br&gt;&quot; +&#xa;    &quot;uniCenta oPOS is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.&lt;br&gt;&quot; +&#xa;    &quot;&lt;br&gt;&quot; +&#xa;    &quot;You should have received a copy of the GNU General Public License along with uniCenta oPOS.  If not, see http://www.gnu.org/licenses/&lt;br&gt;&quot; +&#xa;    &quot;&lt;/center&gt;&quot;" type="code"/>
-                    </Property>
-                    <Property name="alignmentX" type="float" value="0.5"/>
-                    <Property name="horizontalTextPosition" type="int" value="0"/>
-                    <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-                      <Dimension value="[800, 1024]"/>
-                    </Property>
-                    <Property name="verticalTextPosition" type="int" value="3"/>
-                  </Properties>
-                </Component>
                 <Component class="javax.swing.Box$Filler" name="filler2">
                   <Properties>
                     <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
@@ -166,6 +147,26 @@
                   <AuxValues>
                     <AuxValue name="classDetails" type="java.lang.String" value="Box.Filler.HorizontalGlue"/>
                   </AuxValues>
+                </Component>
+                <Component class="javax.swing.JLabel" name="jLabel1">
+                  <Properties>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Arial" size="12" style="0"/>
+                    </Property>
+                    <Property name="horizontalAlignment" type="int" value="0"/>
+                    <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                      <Image iconType="3" name="/com/openbravo/images/smikro_pos_invite.png"/>
+                    </Property>
+                    <Property name="text" type="java.lang.String" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+                      <Connection code="&quot;&lt;html&gt;&lt;center&gt;&#xb5;BLAGAJNA - Brezpla&#x10d;na POS Blagajna na dotik&lt;br&gt;&quot; +&#xa;    &quot;Avtorske pravice \u00A9 2014 www.smikro.org &lt;br&gt;&quot; +&#xa;    &quot;http://www.smikro.org&lt;br&gt;&quot; +&#xa;    &quot;&lt;br&gt;&quot; +&#xa;    &quot;&#xb5;BLAGAJNA je prosta programska oprema: lahko jo raz&#x161;irjate in spreminjate pod pogoji GNU General Public License razli&#x10d;ica 3 kot je objavljena na Free Software Foundation, ali na va&#x161;o &#x17e;eljo katerokoli kasnej&#x161;o razli&#x10d;ico.&lt;br&gt;&quot; +&#xa;    &quot;&lt;br&gt;&quot; +&#xa;    &quot;Kopijo te licence morate prejeti z tem programom.  V nasprotnem primeruse obrnite na http://www.gnu.org/licenses/&lt;br&gt;&quot; +&#xa;    &quot;Nekaj zna&#x10d;ilnosti odprtokodne programske opreme (LICENCA: GNU General Public License (GPL)):&lt;br&gt;&quot;+&#xa;    &quot;Ta licenca dovoljuje prosto razmno&#x17e;evanje, urejanje kode, izbolj&#x161;evanje programa. Spremembe mora urejevalec poslati nazaj avtorju.&lt;br&gt;&quot;+&#xa;    &quot;Ta licenca dovoljuje prosto urejanje programov vendar morajo ostati odprtokodni+&lt;br&gt;&quot;+&#xa;    &quot;Program izdan pod GPL se lahko prosto razmno&#x17e;uje brezpla&#x10d;no oziroma s pla&#x10d;ilom potro&#x161;nega materiala (CD, embala&#x17e;a, ...)&quot;+&#xa;    &quot;&lt;/center&gt;&quot;" type="code"/>
+                    </Property>
+                    <Property name="alignmentX" type="float" value="0.5"/>
+                    <Property name="horizontalTextPosition" type="int" value="0"/>
+                    <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                      <Dimension value="[800, 1024]"/>
+                    </Property>
+                    <Property name="verticalTextPosition" type="int" value="3"/>
+                  </Properties>
                 </Component>
               </SubComponents>
             </Container>
