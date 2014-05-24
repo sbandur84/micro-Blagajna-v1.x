@@ -215,6 +215,8 @@ public class JNumberKeys extends javax.swing.JPanel {
         setLayout(new java.awt.GridBagLayout());
 
         m_jCE.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/openbravo/images/btnce.png"))); // NOI18N
+        java.util.ResourceBundle bundle = java.util.ResourceBundle.getBundle("pos_messages"); // NOI18N
+        m_jCE.setToolTipText(bundle.getString("caption.numberkeysce")); // NOI18N
         m_jCE.setFocusPainted(false);
         m_jCE.setFocusable(false);
         m_jCE.setMargin(new java.awt.Insets(8, 16, 8, 16));
@@ -250,6 +252,7 @@ public class JNumberKeys extends javax.swing.JPanel {
         add(m_jMultiply, gridBagConstraints);
 
         m_jMinus.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/openbravo/images/btnminus.png"))); // NOI18N
+        m_jMinus.setToolTipText(bundle.getString("caption.numberkeysminus")); // NOI18N
         m_jMinus.setFocusPainted(false);
         m_jMinus.setFocusable(false);
         m_jMinus.setMargin(new java.awt.Insets(8, 16, 8, 16));
@@ -267,6 +270,7 @@ public class JNumberKeys extends javax.swing.JPanel {
         add(m_jMinus, gridBagConstraints);
 
         m_jPlus.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/openbravo/images/btnplus.png"))); // NOI18N
+        m_jPlus.setToolTipText(bundle.getString("caption.numberkeysplus")); // NOI18N
         m_jPlus.setFocusPainted(false);
         m_jPlus.setFocusable(false);
         m_jPlus.setMargin(new java.awt.Insets(8, 16, 8, 16));
@@ -462,6 +466,7 @@ public class JNumberKeys extends javax.swing.JPanel {
         add(m_jKeyDot, gridBagConstraints);
 
         m_jEquals.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/openbravo/images/btnequals.png"))); // NOI18N
+        m_jEquals.setToolTipText(bundle.getString("caption.closeticket")); // NOI18N
         m_jEquals.setFocusPainted(false);
         m_jEquals.setFocusable(false);
         m_jEquals.setMargin(new java.awt.Insets(8, 16, 8, 16));

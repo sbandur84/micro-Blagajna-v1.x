@@ -12,6 +12,8 @@
             <file>file:/home/seba/Razvoj/mikroBLAGAJNA-git-master/locales/Slovenian/reports/com/openbravo/reports/cashregisterlog_messages.properties</file>
             <file>file:/home/seba/Razvoj/mikroBLAGAJNA-git-master/src-pos/com/openbravo/pos/sales/JTicketCatalogLines.java</file>
             <file>file:/home/seba/Razvoj/mikroBLAGAJNA-git-master/src-pos/com/openbravo/pos/ticket/TicketTaxInfo.java</file>
+            <file>file:/home/seba/Razvoj/mikroBLAGAJNA-git-master/src-pos/com/openbravo/pos/customers/CustomerTransaction.java</file>
+            <file>file:/home/seba/Razvoj/mikroBLAGAJNA-git-master/src-pos/com/openbravo/pos/forms/BeanFactoryApp.java</file>
             <file>file:/home/seba/Razvoj/mikroBLAGAJNA-git-master/src-pos/com/openbravo/pos/templates/Ticket.Line.xml</file>
             <file>file:/home/seba/Razvoj/mikroBLAGAJNA-git-master/locales/Slovenian/reports/com/openbravo/reports/cashflow_messages.properties</file>
         </group>

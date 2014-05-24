@@ -317,8 +317,9 @@ public class JTicketsBagTicket extends JTicketsBag {
 
         jButton2.setFont(new java.awt.Font("Arial", 0, 11)); // NOI18N
         jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/openbravo/images/search24.png"))); // NOI18N
-        jButton2.setText(AppLocal.getIntString("button.print")); // NOI18N
-        jButton2.setToolTipText("Najdi račun");
+        jButton2.setText(AppLocal.getIntString("button.find")); // NOI18N
+        java.util.ResourceBundle bundle = java.util.ResourceBundle.getBundle("pos_messages"); // NOI18N
+        jButton2.setToolTipText(bundle.getString("caption.findticket")); // NOI18N
         jButton2.setFocusPainted(false);
         jButton2.setFocusable(false);
         jButton2.setMargin(new java.awt.Insets(0, 4, 0, 4));
@@ -335,7 +336,7 @@ public class JTicketsBagTicket extends JTicketsBag {
 
         m_jRefund.setFont(new java.awt.Font("Arial", 0, 11)); // NOI18N
         m_jRefund.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/openbravo/images/inbox.png"))); // NOI18N
-        m_jRefund.setText(AppLocal.getIntString("button.print")); // NOI18N
+        m_jRefund.setText(AppLocal.getIntString("button.refund")); // NOI18N
         m_jRefund.setToolTipText("Storno računa");
         m_jRefund.setFocusPainted(false);
         m_jRefund.setFocusable(false);
@@ -353,8 +354,7 @@ public class JTicketsBagTicket extends JTicketsBag {
 
         m_jPrint.setFont(new java.awt.Font("Arial", 0, 11)); // NOI18N
         m_jPrint.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/openbravo/images/printer24.png"))); // NOI18N
-        m_jPrint.setText(AppLocal.getIntString("button.print")); // NOI18N
-        m_jPrint.setToolTipText("Natisni račun");
+        m_jPrint.setToolTipText(bundle.getString("label.print")); // NOI18N
         m_jPrint.setFocusPainted(false);
         m_jPrint.setFocusable(false);
         m_jPrint.setMargin(new java.awt.Insets(0, 4, 0, 4));
@@ -396,7 +396,7 @@ public class JTicketsBagTicket extends JTicketsBag {
         jPanel5.setLayout(new java.awt.GridBagLayout());
 
         jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/openbravo/images/ok.png"))); // NOI18N
-        jButton1.setToolTipText("Enter Receipt and touch to Find by Number");
+        jButton1.setToolTipText(bundle.getString("caption.showreceipt")); // NOI18N
         jButton1.setFocusPainted(false);
         jButton1.setFocusable(false);
         jButton1.setMargin(new java.awt.Insets(8, 14, 8, 14));
