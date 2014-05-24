@@ -1,7 +1,7 @@
 ----------------------------------------------------------------
-Sat May 24 02:09:44 CEST 2014:
-Booting Derby version The Apache Software Foundation - Apache Derby - 10.9.1.0 - (1344872): instance a816c00e-0146-2b8f-cfda-00000105bb08 
-on database directory /home/seba/mikroblagajna-database  with class loader sun.misc.Launcher$AppClassLoader@e0eb3f 
+Sat May 24 02:58:13 CEST 2014:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.9.1.0 - (1344872): instance a816c00e-0146-2bbc-3587-000002e3a350 
+on database directory /home/seba/mikroblagajna-database  with class loader sun.misc.Launcher$AppClassLoader@74b10b 
 Loaded from file:/home/seba/Razvoj/mikroBLAGAJNA-git-master/lib/derby.jar
 java.vendor=Oracle Corporation
 java.runtime.version=1.7.0_55-b13
