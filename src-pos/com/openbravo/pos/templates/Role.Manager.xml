@@ -42,7 +42,6 @@
     <class name="com.openbravo.pos.panels.JPanelCloseMoney"/>
 
     <class name="sales.EditLines"/>
-    <class name="sales.EditTicket"/>
     <class name="sales.RefundTicket"/>
     <class name="sales.PrintTicket"/>
     <class name="sales.Total"/>

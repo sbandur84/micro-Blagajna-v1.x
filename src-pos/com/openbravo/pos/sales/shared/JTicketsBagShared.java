@@ -189,21 +189,40 @@ public class JTicketsBagShared extends JTicketsBag {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
+        m_jListTickets = new javax.swing.JButton();
         m_jNewTicket = new javax.swing.JButton();
         m_jDelTicket = new javax.swing.JButton();
-        m_jListTickets = new javax.swing.JButton();
 
         setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         setLayout(new java.awt.BorderLayout());
 
+        m_jListTickets.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/openbravo/images/sale_pending.png"))); // NOI18N
+        java.util.ResourceBundle bundle = java.util.ResourceBundle.getBundle("pos_messages"); // NOI18N
+        m_jListTickets.setText(bundle.getString("button.saleslist")); // NOI18N
+        m_jListTickets.setToolTipText(bundle.getString("tooltip.currentsaleslist")); // NOI18N
+        m_jListTickets.setFocusPainted(false);
+        m_jListTickets.setFocusable(false);
+        m_jListTickets.setMargin(new java.awt.Insets(0, 4, 0, 4));
+        m_jListTickets.setMaximumSize(new java.awt.Dimension(90, 40));
+        m_jListTickets.setMinimumSize(new java.awt.Dimension(90, 40));
+        m_jListTickets.setPreferredSize(new java.awt.Dimension(90, 40));
+        m_jListTickets.setRequestFocusEnabled(false);
+        m_jListTickets.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                m_jListTicketsActionPerformed(evt);
+            }
+        });
+        jPanel1.add(m_jListTickets);
+
         m_jNewTicket.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/openbravo/images/sale_new.png"))); // NOI18N
-        m_jNewTicket.setToolTipText("New Sale");
+        m_jNewTicket.setText(bundle.getString("button.newsale")); // NOI18N
+        m_jNewTicket.setToolTipText(bundle.getString("tooltip.newsale")); // NOI18N
         m_jNewTicket.setFocusPainted(false);
         m_jNewTicket.setFocusable(false);
         m_jNewTicket.setMargin(new java.awt.Insets(0, 4, 0, 4));
-        m_jNewTicket.setMaximumSize(new java.awt.Dimension(50, 40));
-        m_jNewTicket.setMinimumSize(new java.awt.Dimension(50, 40));
-        m_jNewTicket.setPreferredSize(new java.awt.Dimension(50, 40));
+        m_jNewTicket.setMaximumSize(new java.awt.Dimension(70, 40));
+        m_jNewTicket.setMinimumSize(new java.awt.Dimension(70, 40));
+        m_jNewTicket.setPreferredSize(new java.awt.Dimension(70, 40));
         m_jNewTicket.setRequestFocusEnabled(false);
         m_jNewTicket.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -213,7 +232,7 @@ public class JTicketsBagShared extends JTicketsBag {
         jPanel1.add(m_jNewTicket);
 
         m_jDelTicket.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/openbravo/images/sale_delete.png"))); // NOI18N
-        m_jDelTicket.setToolTipText("Cancel Sale");
+        m_jDelTicket.setToolTipText(bundle.getString("button.cancelsale")); // NOI18N
         m_jDelTicket.setFocusPainted(false);
         m_jDelTicket.setFocusable(false);
         m_jDelTicket.setMargin(new java.awt.Insets(0, 4, 0, 4));
@@ -227,22 +246,6 @@ public class JTicketsBagShared extends JTicketsBag {
             }
         });
         jPanel1.add(m_jDelTicket);
-
-        m_jListTickets.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/openbravo/images/sale_pending.png"))); // NOI18N
-        m_jListTickets.setToolTipText("Layaways");
-        m_jListTickets.setFocusPainted(false);
-        m_jListTickets.setFocusable(false);
-        m_jListTickets.setMargin(new java.awt.Insets(0, 4, 0, 4));
-        m_jListTickets.setMaximumSize(new java.awt.Dimension(50, 40));
-        m_jListTickets.setMinimumSize(new java.awt.Dimension(50, 40));
-        m_jListTickets.setPreferredSize(new java.awt.Dimension(50, 40));
-        m_jListTickets.setRequestFocusEnabled(false);
-        m_jListTickets.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                m_jListTicketsActionPerformed(evt);
-            }
-        });
-        jPanel1.add(m_jListTickets);
 
         add(jPanel1, java.awt.BorderLayout.WEST);
     }// </editor-fold>//GEN-END:initComponents

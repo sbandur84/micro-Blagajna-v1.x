@@ -23,8 +23,8 @@
 <output>
 
 <display>
-	<line><text align="left" length="10">Total</text><text align="right" length="10">${ticket.printTotal()}</text></line>
-	<line><text align="center" length="20">Thank you for your custom</text></line>
+	<line><text align="left" length="10">Skupaj:</text><text align="right" length="10">${ticket.printTotal()}</text></line>
+	<line><text align="center" length="20">Hvala za nakup</text></line>
 </display>
 
 <ticket>
@@ -89,6 +89,11 @@
                     <text bold="true" length="20">Prejeta gotovina:</text>
                     <text align ="right" length="22">${paymentline.printPaid()}</text>
                 </line>
+                <line>
+                    <text bold="true" length="20">Vrnjena gotovina:</text>
+                    <text align ="right" length="22">${paymentline.printChange()}</text>
+                </line>
+                
 	#end
           	
 	#if ($paymentline.name == "cashrefund")
@@ -157,7 +162,7 @@
 #end
         <line></line>       
 	<line><text align ="left" bold="true" length="18">Specifikacija DDV</text></line>
-        <line><text align ="left" bold="true" length="42">------------------------------------------</text></line>
+    
 	<!-- <line><text align ="left" bold="true" length="16">Brez DDV:</text><text align ="right" length="26">${ticket.printSubTotal()}</text></line>
 	<line><text align ="left" length="16">DDV:</text><text align ="right" length="26">${ticket.printTax()}</text></line> -->
         <line>
@@ -165,6 +170,7 @@
             <text align ="right" length="12">Osnova</text>
             <text align ="right" length="12">DDV</text>
         </line>
+    <line><text align ="left"  length="42">------------------------------------------</text></line>
         #foreach ($taxline in $ticket.getTaxLines())
             #if ($taxline.getTax() != 0)
                 <line>

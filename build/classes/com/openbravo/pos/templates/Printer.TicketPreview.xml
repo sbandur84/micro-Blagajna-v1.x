@@ -23,8 +23,8 @@
 <output>
 
 <display>
-	<line><text align="left" length="10">Total</text><text align="right" length="10">${ticket.printTotal()}</text></line>
-	<line><text align="center" length="20">Thank you for your custom</text></line>
+	<line><text align="left" length="10">Skupaj:</text><text align="right" length="10">${ticket.printTotal()}</text></line>
+	<line><text align="center" length="20">Hvala za nakup</text></line>
 </display>
 
 <ticket>
@@ -57,7 +57,7 @@
         
 		<line><text align="left" length="15">Natakar:</text><text>${ticket.printUser()}</text></line>
 		<line></line>
-		<line><text align ="left" length="17">Artikel</text><text align ="center" length="8">Kol.</text><text align ="center" length="7">DDV</text><text align ="right" length="10">Vrednost</text></line>
+		<line><text align ="left" length="17">Artikel</text><text align ="right" length="8">Cena</text><text align ="right" length="7">Kol.</text><text align ="right" length="10">Vrednost</text></line>
 		<line><text align="left" length="42">------------------------------------------</text></line>
                 
 #foreach ($ticketline in $ticket.getLines())
@@ -68,10 +68,8 @@
 	#else
 		<text align ="left" length="17">${ticketline.printName()}</text>
 	#end
-                <text align ="center" length="8">x${ticketline.printMultiply()}</text>
-                <text align ="center" length="7">${ticketline.printTaxRate()}</text>
-		
-		
+		<text align ="right" length="8">${ticketline.printPriceTax()}</text>
+		<text align ="right" length="7">x${ticketline.printMultiply()}</text>
 		<text align ="right" length="10">${ticketline.printValue()}</text>
 	</line>
 
@@ -91,6 +89,11 @@
                     <text bold="true" length="20">Prejeta gotovina:</text>
                     <text align ="right" length="22">${paymentline.printPaid()}</text>
                 </line>
+                <line>
+                    <text bold="true" length="20">Vrnjena gotovina:</text>
+                    <text align ="right" length="22">${paymentline.printChange()}</text>
+                </line>
+                
 	#end
           	
 	#if ($paymentline.name == "cashrefund")
@@ -159,7 +162,7 @@
 #end
         <line></line>       
 	<line><text align ="left" bold="true" length="18">Specifikacija DDV</text></line>
-        <line><text align ="left" bold="true" length="42">------------------------------------------</text></line>
+    
 	<!-- <line><text align ="left" bold="true" length="16">Brez DDV:</text><text align ="right" length="26">${ticket.printSubTotal()}</text></line>
 	<line><text align ="left" length="16">DDV:</text><text align ="right" length="26">${ticket.printTax()}</text></line> -->
         <line>
@@ -167,6 +170,7 @@
             <text align ="right" length="12">Osnova</text>
             <text align ="right" length="12">DDV</text>
         </line>
+    <line><text align ="left"  length="42">------------------------------------------</text></line>
         #foreach ($taxline in $ticket.getTaxLines())
             #if ($taxline.getTax() != 0)
                 <line>
@@ -179,7 +183,7 @@
         <line></line>
         
         <line><text align="center" bold="true" length="42">ID za DDV: 83746586</text></line>
-        <line><text align="center" bold="true" length="42">TRR: 041 95 596 394 559 31</text></line>
+        <line><text align="center" bold="true" length="42">TRR: 041 95 596 394 559 32</text></line>
         <line><text align="center" length="42">Podjetje smikro.org je po 94. členu ZDDV-1</text></line>
         <line><text align="center" length="42">oproščeno plačila DDV</text></line>
         <!-- <line><text align="center" length="42">Osnovni kapital: 25,000.00 €</text></line> -->                  

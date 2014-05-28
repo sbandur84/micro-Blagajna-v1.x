@@ -58,6 +58,10 @@ public class DeviceScale {
                 // on screen scale
                 m_scale = new ScaleDialog(parent);
                 break;
+            case "metersqare":
+                // on screen scale sqare meter input
+                m_scale = new ScaleMeterSqare(parent);
+                break;
             default:
                 m_scale = null;
                 break;

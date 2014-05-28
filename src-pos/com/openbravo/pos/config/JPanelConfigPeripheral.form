@@ -30,7 +30,7 @@
     <DimensionLayout dim="1">
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="0" attributes="0">
-              <Component id="jPanel13" pref="389" max="32767" attributes="0"/>
+              <Component id="jPanel13" pref="388" max="32767" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
           </Group>
       </Group>
@@ -110,7 +110,7 @@
                       </Group>
                       <Group type="102" alignment="0" attributes="0">
                           <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                              <Component id="jLabel5" max="32767" attributes="0"/>
+                              <Component id="jLabel5" pref="115" max="32767" attributes="0"/>
                               <Component id="jLabel6" max="32767" attributes="0"/>
                           </Group>
                           <EmptySpace max="32767" attributes="0"/>
@@ -118,7 +118,7 @@
                               <Group type="102" alignment="0" attributes="0">
                                   <Component id="jcboMachineDisplay" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="m_jDisplayParams" pref="394" max="32767" attributes="0"/>
+                                  <Component id="m_jDisplayParams" max="32767" attributes="0"/>
                               </Group>
                               <Group type="102" attributes="0">
                                   <Component id="jcboMachinePrinter" min="-2" max="-2" attributes="0"/>

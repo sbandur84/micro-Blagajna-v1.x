@@ -24,7 +24,7 @@
 index = sales.getSelectedIndex(); 
 if (index >= 0) {   
     line = ticket.getLine(index);   
-    value = javax.swing.JOptionPane.showInputDialog("Line notes", line.getProperty("notes")); 
+    value = javax.swing.JOptionPane.showInputDialog("Opis izdelka", line.getProperty("notes")); 
     if (value != null) { 
         // the user pressed OK 
         line.setProperty("notes", value); 

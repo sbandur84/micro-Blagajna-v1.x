@@ -226,37 +226,37 @@ public class JPanelConfiguration extends JPanel implements JPanelView {
         jPanelDatabase.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         jPanelDatabase.setPreferredSize(new java.awt.Dimension(0, 400));
         jPanelDatabase.setLayout(new javax.swing.BoxLayout(jPanelDatabase, javax.swing.BoxLayout.LINE_AXIS));
-        jTabbedPane1.addTab("Database Setup", jPanelDatabase);
+        jTabbedPane1.addTab("Podatkovna baza", jPanelDatabase);
 
         jPanelGeneral.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         jPanelGeneral.setPreferredSize(new java.awt.Dimension(0, 400));
         jPanelGeneral.setLayout(new javax.swing.BoxLayout(jPanelGeneral, javax.swing.BoxLayout.LINE_AXIS));
-        jTabbedPane1.addTab("General", jPanelGeneral);
+        jTabbedPane1.addTab("Splošno", jPanelGeneral);
 
         jPanelLocale.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         jPanelLocale.setPreferredSize(new java.awt.Dimension(730, 400));
         jPanelLocale.setLayout(new javax.swing.BoxLayout(jPanelLocale, javax.swing.BoxLayout.LINE_AXIS));
-        jTabbedPane1.addTab("Locale", jPanelLocale);
+        jTabbedPane1.addTab("Regija", jPanelLocale);
 
         jPanelPayment.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         jPanelPayment.setPreferredSize(new java.awt.Dimension(0, 400));
         jPanelPayment.setLayout(new javax.swing.BoxLayout(jPanelPayment, javax.swing.BoxLayout.LINE_AXIS));
-        jTabbedPane1.addTab("Payment Method", jPanelPayment);
+        jTabbedPane1.addTab("Načini plačil", jPanelPayment);
 
         jPanelPeripheral.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         jPanelPeripheral.setPreferredSize(new java.awt.Dimension(0, 400));
         jPanelPeripheral.setLayout(new javax.swing.BoxLayout(jPanelPeripheral, javax.swing.BoxLayout.LINE_AXIS));
-        jTabbedPane1.addTab("Peripherals", jPanelPeripheral);
+        jTabbedPane1.addTab("Naprave", jPanelPeripheral);
 
         jPanelSystem.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         jPanelSystem.setPreferredSize(new java.awt.Dimension(0, 400));
         jPanelSystem.setLayout(new javax.swing.BoxLayout(jPanelSystem, javax.swing.BoxLayout.LINE_AXIS));
-        jTabbedPane1.addTab("System Options", jPanelSystem);
+        jTabbedPane1.addTab("Sistemske nastavitve", jPanelSystem);
 
         jPanelTicketSetup.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         jPanelTicketSetup.setPreferredSize(new java.awt.Dimension(0, 400));
         jPanelTicketSetup.setLayout(new javax.swing.BoxLayout(jPanelTicketSetup, javax.swing.BoxLayout.LINE_AXIS));
-        jTabbedPane1.addTab("Ticket Setup", jPanelTicketSetup);
+        jTabbedPane1.addTab("Izpis računov", jPanelTicketSetup);
 
         jbtnRestore.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         jbtnRestore.setText(AppLocal.getIntString("Button.Factory")); // NOI18N

@@ -774,11 +774,12 @@
                 <Component class="com.openbravo.beans.JNumberKeys" name="m_jNumberKeys">
                   <Properties>
                     <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-                      <Dimension value="[200, 200]"/>
+                      <Dimension value="[180, 180]"/>
                     </Property>
                     <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-                      <Dimension value="[250, 250]"/>
+                      <Dimension value="[236, 225]"/>
                     </Property>
+                    <Property name="requestFocusEnabled" type="boolean" value="false"/>
                   </Properties>
                   <Events>
                     <EventHandler event="keyPerformed" listener="com.openbravo.beans.JNumberEventListener" parameters="com.openbravo.beans.JNumberEvent" handler="m_jNumberKeysKeyPerformed"/>

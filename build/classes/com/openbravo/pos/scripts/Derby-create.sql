@@ -135,6 +135,9 @@ INSERT INTO RESOURCES(ID, NAME, RESTYPE, CONTENT) VALUES('58', 'Ticket.TicketLin
 
 INSERT INTO RESOURCES(ID, NAME, RESTYPE, CONTENT) VALUES('59', 'Window.Logo', 1, $FILE{/com/openbravo/pos/templates/window.logo.png});
 INSERT INTO RESOURCES(ID, NAME, RESTYPE, CONTENT) VALUES('60', 'Window.Title', 0, $FILE{/com/openbravo/pos/templates/Window.Title.txt});
+INSERT INTO RESOURCES(ID, NAME, RESTYPE, CONTENT) VALUES('61', 'Printer.TicketInfoPrint', 0, $FILE{/com/openbravo/pos/templates/Printer.TicketInfoPrint.xml});
+INSERT INTO RESOURCES(ID, NAME, RESTYPE, CONTENT) VALUES('62', 'Printer.Ticket_A4', 0, $FILE{/com/openbravo/pos/templates/Printer.TicketTicket_A4.xml});
+INSERT INTO RESOURCES(ID, NAME, RESTYPE, CONTENT) VALUES('63', 'Printer.TicketPreview_A4', 0, $FILE{/com/openbravo/pos/templates/Printer.TicketTicket_A4.xml});
 
 CREATE TABLE TAXCUSTCATEGORIES (
     ID VARCHAR(256) NOT NULL,

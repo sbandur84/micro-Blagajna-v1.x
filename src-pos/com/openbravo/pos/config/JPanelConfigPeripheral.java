@@ -375,6 +375,7 @@ public class JPanelConfigPeripheral extends javax.swing.JPanel implements PanelC
         jcboMachineScale.addItem("casiopd1");
         jcboMachineScale.addItem("dialog1");
         jcboMachineScale.addItem("samsungesp");
+        jcboMachineScale.addItem("metersqare");
 
         jcboSerialScale.addItem("COM1");
         jcboSerialScale.addItem("COM2");
@@ -630,7 +631,7 @@ public class JPanelConfigPeripheral extends javax.swing.JPanel implements PanelC
         p = new StringParser(config.getProperty("machine.scale"));
         sparam = p.nextToken(':');
         jcboMachineScale.setSelectedItem(sparam);
-        if ("casiopd1".equals(sparam) || "dialog1".equals(sparam) || "samsungesp".equals(sparam)) {
+        if ("casiopd1".equals(sparam) || "dialog1".equals(sparam) || "samsungesp".equals(sparam) || "metersqare".equals(sparam)) {
             jcboSerialScale.setSelectedItem(p.nextToken(','));
         }
 
@@ -804,7 +805,8 @@ public class JPanelConfigPeripheral extends javax.swing.JPanel implements PanelC
 //JG 20 Aug 2013 Add Casio PD1 Scale
         String sMachineScale = comboValue(jcboMachineScale.getSelectedItem());
         if ("casiopd1".equals(sMachineScale) || 
-                "dialog1".equals(sMachineScale) || 
+                "dialog1".equals(sMachineScale) ||
+                "metersqare".equals(sMachineScale) ||
                 "samsungesp".equals(sMachineScale)) {
             config.setProperty("machine.scale", sMachineScale + ":" + comboValue(jcboSerialScale.getSelectedItem()));
         } else {
@@ -2027,6 +2029,7 @@ public class JPanelConfigPeripheral extends javax.swing.JPanel implements PanelC
         // JG 29 Aug 13 - Add Casio PD1 Scale
         if ("casiopd1".equals(jcboMachineScale.getSelectedItem()) ||
             "dialog1".equals(jcboMachineScale.getSelectedItem()) ||
+            "metersqare".equals(jcboMachineScale.getSelectedItem()) ||
             "samsungesp".equals(jcboMachineScale.getSelectedItem())) {
             cl.show(m_jScaleParams, "comm");
         } else {

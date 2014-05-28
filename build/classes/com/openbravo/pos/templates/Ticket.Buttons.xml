@@ -30,10 +30,13 @@
 
 	<!-- SET Sales Ticket ServiceCharge (Default=DISABLED) -->
 	<!-- <button key="button.scharge" image="img.heart" code="script.ServiceCharge"/> -->
-                
+             
+        <!-- SET dodaj zapiske k izbrani vrstici na računu --> 
+	<button key="button.sendorder" code="script.AddLineNote"/>
+                      
 	<!-- SET Line or Total Discount (Default=TotalDiscount= ENABLED) -->
 	<!-- <button key="button.totaldiscount" image="img.discount" code="script.totaldiscount"/> -->
-	<button key="button.linediscount" image="img.discount" code="script.linediscount"/>  
+	<button key="button.linediscount" name="button.Discount" image="img.discount" code="script.linediscount"/>  
 
 	<!-- SET Waiter's name (Default=DISABLED) -->
 	<!--<button key="button.setperson" image="img.user" code="script.SetPerson"/>-->
@@ -42,10 +45,11 @@
 	<!-- <button key="button.sendorder" image="img.kit_print" code="script.SendOrder"/>--> 
 
 	<!-- SET Ticket Print Preview (Default=ENABLED) -->
-    	<button key="button.print" image="img.ticket_print" template="Printer.TicketPreview"/>
+    	<button key="button.print" titlekey="button.infoprint" image="img.ticket_print" template="Printer.TicketInfoPrint"/>
 
 	<!-- SET Open Cashdrawer (Default=ENABLED) -->
-	<button key="button.opendrawer" image="img.cashdrawer" template="Printer.OpenDrawer"/>
+	<button key="button.opendrawer" titlekey="button.drawer" template="Printer.OpenDrawer"/>
+            <!-- onemogočeno  image="img.cashdrawer"  -->
         
 <!-- END Sales Ticket Button Bar - Show icons -->
 
@@ -93,7 +97,7 @@
 
 <!-- ADDITIONAL FEATURES ************************************************* -->
     <!-- SET Show Change in Cash Sale (Default=ENABLED -->
-        <event key="ticket.close" code="Ticket.Close"/>
+    <!--    <event key="ticket.close" code="Ticket.Close"/>  -->
 
     <!-- SET Consolidate Receipt - Multiple ProductID's (Default=DISABLED) -->
         <!-- <event  key="ticket.total" code="script.ReceiptConsolidate"/> -->

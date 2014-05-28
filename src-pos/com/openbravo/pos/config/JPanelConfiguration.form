@@ -71,8 +71,8 @@
           </Properties>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
-              <JTabbedPaneConstraints tabName="Database Setup">
-                <Property name="tabTitle" type="java.lang.String" value="Database Setup"/>
+              <JTabbedPaneConstraints tabName="Podatkovna baza">
+                <Property name="tabTitle" type="java.lang.String" value="Podatkovna baza"/>
               </JTabbedPaneConstraints>
             </Constraint>
           </Constraints>
@@ -90,8 +90,8 @@
           </Properties>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
-              <JTabbedPaneConstraints tabName="General">
-                <Property name="tabTitle" type="java.lang.String" value="General"/>
+              <JTabbedPaneConstraints tabName="Splo&#x161;no">
+                <Property name="tabTitle" type="java.lang.String" value="Splo&#x161;no"/>
               </JTabbedPaneConstraints>
             </Constraint>
           </Constraints>
@@ -109,8 +109,8 @@
           </Properties>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
-              <JTabbedPaneConstraints tabName="Locale">
-                <Property name="tabTitle" type="java.lang.String" value="Locale"/>
+              <JTabbedPaneConstraints tabName="Regija">
+                <Property name="tabTitle" type="java.lang.String" value="Regija"/>
               </JTabbedPaneConstraints>
             </Constraint>
           </Constraints>
@@ -128,8 +128,8 @@
           </Properties>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
-              <JTabbedPaneConstraints tabName="Payment Method">
-                <Property name="tabTitle" type="java.lang.String" value="Payment Method"/>
+              <JTabbedPaneConstraints tabName="Na&#x10d;ini pla&#x10d;il">
+                <Property name="tabTitle" type="java.lang.String" value="Na&#x10d;ini pla&#x10d;il"/>
               </JTabbedPaneConstraints>
             </Constraint>
           </Constraints>
@@ -147,8 +147,8 @@
           </Properties>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
-              <JTabbedPaneConstraints tabName="Peripherals">
-                <Property name="tabTitle" type="java.lang.String" value="Peripherals"/>
+              <JTabbedPaneConstraints tabName="Naprave">
+                <Property name="tabTitle" type="java.lang.String" value="Naprave"/>
               </JTabbedPaneConstraints>
             </Constraint>
           </Constraints>
@@ -166,8 +166,8 @@
           </Properties>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
-              <JTabbedPaneConstraints tabName="System Options">
-                <Property name="tabTitle" type="java.lang.String" value="System Options"/>
+              <JTabbedPaneConstraints tabName="Sistemske nastavitve">
+                <Property name="tabTitle" type="java.lang.String" value="Sistemske nastavitve"/>
               </JTabbedPaneConstraints>
             </Constraint>
           </Constraints>
@@ -185,8 +185,8 @@
           </Properties>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
-              <JTabbedPaneConstraints tabName="Ticket Setup">
-                <Property name="tabTitle" type="java.lang.String" value="Ticket Setup"/>
+              <JTabbedPaneConstraints tabName="Izpis ra&#x10d;unov">
+                <Property name="tabTitle" type="java.lang.String" value="Izpis ra&#x10d;unov"/>
               </JTabbedPaneConstraints>
             </Constraint>
           </Constraints>

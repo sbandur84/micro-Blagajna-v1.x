@@ -2173,8 +2173,9 @@ if (pickupSize!=null && (Integer.parseInt(pickupSize) >= tmpPickupId.length())){
 
         m_jPanEntries.setLayout(new javax.swing.BoxLayout(m_jPanEntries, javax.swing.BoxLayout.Y_AXIS));
 
-        m_jNumberKeys.setMinimumSize(new java.awt.Dimension(200, 200));
-        m_jNumberKeys.setPreferredSize(new java.awt.Dimension(250, 250));
+        m_jNumberKeys.setMinimumSize(new java.awt.Dimension(180, 180));
+        m_jNumberKeys.setPreferredSize(new java.awt.Dimension(236, 225));
+        m_jNumberKeys.setRequestFocusEnabled(false);
         m_jNumberKeys.addJNumberEventListener(new com.openbravo.beans.JNumberEventListener() {
             public void keyPerformed(com.openbravo.beans.JNumberEvent evt) {
                 m_jNumberKeysKeyPerformed(evt);
