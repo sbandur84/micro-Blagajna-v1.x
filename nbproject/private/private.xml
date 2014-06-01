@@ -3,10 +3,8 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/home/seba/Razvoj/mikroBLAGAJNA-git-master/src-pos/com/openbravo/pos/templates/Printer.Ticket_A4.xml</file>
-            <file>file:/home/seba/Razvoj/mikroBLAGAJNA-git-master/src-pos/com/openbravo/pos/templates/Printer.TicketPreview_A4.xml</file>
-            <file>file:/home/seba/Razvoj/mikroBLAGAJNA-git-master/src-pos/com/openbravo/pos/scripts/MySQL-create.sql</file>
-            <file>file:/home/seba/Razvoj/mikroBLAGAJNA-git-master/src-pos/com/openbravo/pos/scripts/Derby-create.sql</file>
+            <file>file:/home/seba/Razvoj/mikroBLAGAJNA-git-master/src-pos/com/openbravo/pos/templates/Printer.TicketDoubleLine.xml</file>
+            <file>file:/home/seba/Razvoj/mikroBLAGAJNA-git-master/src-pos/com/openbravo/pos/templates/Printer.Ticket.xml</file>
         </group>
     </open-files>
 </project-private>

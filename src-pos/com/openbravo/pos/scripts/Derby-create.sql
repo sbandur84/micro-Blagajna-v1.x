@@ -136,8 +136,12 @@ INSERT INTO RESOURCES(ID, NAME, RESTYPE, CONTENT) VALUES('58', 'Ticket.TicketLin
 INSERT INTO RESOURCES(ID, NAME, RESTYPE, CONTENT) VALUES('59', 'Window.Logo', 1, $FILE{/com/openbravo/pos/templates/window.logo.png});
 INSERT INTO RESOURCES(ID, NAME, RESTYPE, CONTENT) VALUES('60', 'Window.Title', 0, $FILE{/com/openbravo/pos/templates/Window.Title.txt});
 INSERT INTO RESOURCES(ID, NAME, RESTYPE, CONTENT) VALUES('61', 'Printer.TicketInfoPrint', 0, $FILE{/com/openbravo/pos/templates/Printer.TicketInfoPrint.xml});
-INSERT INTO RESOURCES(ID, NAME, RESTYPE, CONTENT) VALUES('62', 'Printer.Ticket_A4', 0, $FILE{/com/openbravo/pos/templates/Printer.TicketTicket_A4.xml});
-INSERT INTO RESOURCES(ID, NAME, RESTYPE, CONTENT) VALUES('63', 'Printer.TicketPreview_A4', 0, $FILE{/com/openbravo/pos/templates/Printer.TicketTicket_A4.xml});
+INSERT INTO RESOURCES(ID, NAME, RESTYPE, CONTENT) VALUES('62', 'Printer.TicketA4', 0, $FILE{/com/openbravo/pos/templates/Printer.TicketA4.xml});
+INSERT INTO RESOURCES(ID, NAME, RESTYPE, CONTENT) VALUES('63', 'Printer.TicketPreviewA4', 0, $FILE{/com/openbravo/pos/templates/Printer.TicketPreviewA4.xml});
+INSERT INTO RESOURCES(ID, NAME, RESTYPE, CONTENT) VALUES('64', 'img.consolidate', 1, $FILE{/com/openbravo/pos/templates/consolidate.png});
+INSERT INTO RESOURCES(ID, NAME, RESTYPE, CONTENT) VALUES('66', 'img.edit', 1, $FILE{/com/openbravo/pos/templates/sale_editline.png});
+INSERT INTO RESOURCES(ID, NAME, RESTYPE, CONTENT) VALUES('67', 'Printer.TicketDoubleLine', 0, $FILE{/com/openbravo/pos/templates/Printer.TicketDoubleLine.xml});
+INSERT INTO RESOURCES(ID, NAME, RESTYPE, CONTENT) VALUES('68', 'Printer.TicketDoubleLinePreview', 0, $FILE{/com/openbravo/pos/templates/Printer.TicketDoubleLinePreview.xml});
 
 CREATE TABLE TAXCUSTCATEGORIES (
     ID VARCHAR(256) NOT NULL,

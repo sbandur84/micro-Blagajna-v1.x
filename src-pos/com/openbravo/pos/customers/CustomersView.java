@@ -614,7 +614,8 @@ public final class CustomersView extends javax.swing.JPanel implements EditorRec
         jcard.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
 
         jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/openbravo/images/encrypted.png"))); // NOI18N
-        jButton2.setToolTipText("Create Key");
+        java.util.ResourceBundle bundle = java.util.ResourceBundle.getBundle("pos_messages"); // NOI18N
+        jButton2.setToolTipText(bundle.getString("tooltip.createkey")); // NOI18N
         jButton2.setMaximumSize(new java.awt.Dimension(64, 32));
         jButton2.setMinimumSize(new java.awt.Dimension(64, 32));
         jButton2.setPreferredSize(new java.awt.Dimension(64, 32));
@@ -625,7 +626,7 @@ public final class CustomersView extends javax.swing.JPanel implements EditorRec
         });
 
         jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/openbravo/images/fileclose.png"))); // NOI18N
-        jButton3.setToolTipText("Clear Key");
+        jButton3.setToolTipText(bundle.getString("tooltip.clearkey")); // NOI18N
         jButton3.setMaximumSize(new java.awt.Dimension(64, 32));
         jButton3.setMinimumSize(new java.awt.Dimension(64, 32));
         jButton3.setPreferredSize(new java.awt.Dimension(64, 32));
@@ -892,7 +893,7 @@ public final class CustomersView extends javax.swing.JPanel implements EditorRec
                 {null, null, null, null, null}
             },
             new String [] {
-                "TicketID", "Date", "Product", "Quantity", "Total"
+                "Št. računa", "Datum", "Izdelek", "Količina", "Skupaj"
             }
         ));
         jTable1.setAutoResizeMode(javax.swing.JTable.AUTO_RESIZE_ALL_COLUMNS);
@@ -900,6 +901,13 @@ public final class CustomersView extends javax.swing.JPanel implements EditorRec
         jTable1.setRowHeight(20);
         jTable1.setShowHorizontalLines(false);
         jScrollPane2.setViewportView(jTable1);
+        if (jTable1.getColumnModel().getColumnCount() > 0) {
+            jTable1.getColumnModel().getColumn(0).setHeaderValue(bundle.getString("label.ticketid")); // NOI18N
+            jTable1.getColumnModel().getColumn(1).setHeaderValue(bundle.getString("label.date")); // NOI18N
+            jTable1.getColumnModel().getColumn(2).setHeaderValue(bundle.getString("label.product")); // NOI18N
+            jTable1.getColumnModel().getColumn(3).setHeaderValue(bundle.getString("label.quantity")); // NOI18N
+            jTable1.getColumnModel().getColumn(4).setHeaderValue(bundle.getString("label.total")); // NOI18N
+        }
 
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
         jPanel4.setLayout(jPanel4Layout);
@@ -918,7 +926,6 @@ public final class CustomersView extends javax.swing.JPanel implements EditorRec
                 .addContainerGap())
         );
 
-        java.util.ResourceBundle bundle = java.util.ResourceBundle.getBundle("pos_messages"); // NOI18N
         jTabbedPane1.addTab(bundle.getString("label.Transactions"), jPanel4); // NOI18N
 
         m_jImage.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N

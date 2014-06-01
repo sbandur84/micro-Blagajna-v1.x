@@ -238,7 +238,9 @@
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
           <Image iconType="3" name="/com/openbravo/images/encrypted.png"/>
         </Property>
-        <Property name="toolTipText" type="java.lang.String" value="Create Key"/>
+        <Property name="toolTipText" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
+          <ResourceString bundle="pos_messages.properties" key="tooltip.createkey" replaceFormat="java.util.ResourceBundle.getBundle(&quot;{bundleNameSlashes}&quot;).getString(&quot;{key}&quot;)"/>
+        </Property>
         <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
           <Dimension value="[64, 32]"/>
         </Property>
@@ -258,7 +260,9 @@
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
           <Image iconType="3" name="/com/openbravo/images/fileclose.png"/>
         </Property>
-        <Property name="toolTipText" type="java.lang.String" value="Clear Key"/>
+        <Property name="toolTipText" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
+          <ResourceString bundle="pos_messages.properties" key="tooltip.clearkey" replaceFormat="java.util.ResourceBundle.getBundle(&quot;{bundleNameSlashes}&quot;).getString(&quot;{key}&quot;)"/>
+        </Property>
         <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
           <Dimension value="[64, 32]"/>
         </Property>
@@ -423,7 +427,7 @@
           </Properties>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
-              <JTabbedPaneConstraints tabName="Contact">
+              <JTabbedPaneConstraints tabName="Kontakt">
                 <Property name="tabTitle" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
                   <ResourceString bundle="pos_messages.properties" key="label.contact" replaceFormat="AppLocal.getIntString(&quot;{key}&quot;)"/>
                 </Property>
@@ -620,7 +624,7 @@
         <Container class="javax.swing.JPanel" name="jPanel2">
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
-              <JTabbedPaneConstraints tabName="Address">
+              <JTabbedPaneConstraints tabName="Naslov">
                 <Property name="tabTitle" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
                   <ResourceString bundle="pos_messages.properties" key="label.location" replaceFormat="AppLocal.getIntString(&quot;{key}&quot;)"/>
                 </Property>
@@ -808,7 +812,7 @@
           </Properties>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
-              <JTabbedPaneConstraints tabName="Transactions">
+              <JTabbedPaneConstraints tabName="Transakcije">
                 <Property name="tabTitle" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
                   <ResourceString bundle="pos_messages.properties" key="label.Transactions" replaceFormat="java.util.ResourceBundle.getBundle(&quot;{bundleNameSlashes}&quot;).getString(&quot;{key}&quot;)"/>
                 </Property>
@@ -851,38 +855,48 @@
                     </Property>
                     <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
                       <Table columnCount="5" rowCount="8">
-                        <Column editable="true" title="TicketID" type="java.lang.Object"/>
-                        <Column editable="true" title="Date" type="java.lang.Object"/>
-                        <Column editable="true" title="Product" type="java.lang.Object"/>
-                        <Column editable="true" title="Quantity" type="java.lang.Object"/>
-                        <Column editable="true" title="Total" type="java.lang.Object"/>
+                        <Column editable="true" title="&#x160;t. ra&#x10d;una" type="java.lang.Object"/>
+                        <Column editable="true" title="Datum" type="java.lang.Object"/>
+                        <Column editable="true" title="Izdelek" type="java.lang.Object"/>
+                        <Column editable="true" title="Koli&#x10d;ina" type="java.lang.Object"/>
+                        <Column editable="true" title="Skupaj" type="java.lang.Object"/>
                       </Table>
                     </Property>
                     <Property name="autoResizeMode" type="int" value="4"/>
                     <Property name="columnModel" type="javax.swing.table.TableColumnModel" editor="org.netbeans.modules.form.editors2.TableColumnModelEditor">
                       <TableColumnModel selectionModel="0">
                         <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
-                          <Title/>
+                          <Title editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
+                            <ResourceString bundle="pos_messages.properties" key="label.ticketid" replaceFormat="java.util.ResourceBundle.getBundle(&quot;{bundleNameSlashes}&quot;).getString(&quot;{key}&quot;)"/>
+                          </Title>
                           <Editor/>
                           <Renderer/>
                         </Column>
                         <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
-                          <Title/>
+                          <Title editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
+                            <ResourceString bundle="pos_messages.properties" key="label.date" replaceFormat="java.util.ResourceBundle.getBundle(&quot;{bundleNameSlashes}&quot;).getString(&quot;{key}&quot;)"/>
+                          </Title>
                           <Editor/>
                           <Renderer/>
                         </Column>
                         <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
-                          <Title/>
+                          <Title editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
+                            <ResourceString bundle="pos_messages.properties" key="label.product" replaceFormat="java.util.ResourceBundle.getBundle(&quot;{bundleNameSlashes}&quot;).getString(&quot;{key}&quot;)"/>
+                          </Title>
                           <Editor/>
                           <Renderer/>
                         </Column>
                         <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
-                          <Title/>
+                          <Title editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
+                            <ResourceString bundle="pos_messages.properties" key="label.quantity" replaceFormat="java.util.ResourceBundle.getBundle(&quot;{bundleNameSlashes}&quot;).getString(&quot;{key}&quot;)"/>
+                          </Title>
                           <Editor/>
                           <Renderer/>
                         </Column>
                         <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
-                          <Title/>
+                          <Title editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
+                            <ResourceString bundle="pos_messages.properties" key="label.total" replaceFormat="java.util.ResourceBundle.getBundle(&quot;{bundleNameSlashes}&quot;).getString(&quot;{key}&quot;)"/>
+                          </Title>
                           <Editor/>
                           <Renderer/>
                         </Column>
@@ -903,7 +917,7 @@
         <Container class="javax.swing.JPanel" name="jPanel5">
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
-              <JTabbedPaneConstraints tabName="Photo">
+              <JTabbedPaneConstraints tabName="Fotografija">
                 <Property name="tabTitle" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
                   <ResourceString bundle="pos_messages.properties" key="label.photo" replaceFormat="java.util.ResourceBundle.getBundle(&quot;{bundleNameSlashes}&quot;).getString(&quot;{key}&quot;)"/>
                 </Property>
@@ -944,7 +958,7 @@
         <Container class="javax.swing.JPanel" name="jPanel3">
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
-              <JTabbedPaneConstraints tabName="Notes">
+              <JTabbedPaneConstraints tabName="Zapiski">
                 <Property name="tabTitle" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
                   <ResourceString bundle="pos_messages.properties" key="label.notes" replaceFormat="AppLocal.getIntString(&quot;{key}&quot;)"/>
                 </Property>

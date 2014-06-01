@@ -26,29 +26,32 @@
 <configuration>
 <!-- Sales Ticket Button Bar - Show icons **************************************** -->
 	<!-- SET Sales Ticket Refund Item (Default=DISABLED) -->
-	<!-- <button key="button.refundit" image="img.refundit" code="script.Refundit"/> -->
+	<!-- <button key="button.refundit" image="img.refundit" code="script.Refundit"/>  -->
 
-	<!-- SET Sales Ticket ServiceCharge (Default=DISABLED) -->
+	<!-- SET Sales Ticket ServiceCharge (Default=DISABLED) BETA! -->
 	<!-- <button key="button.scharge" image="img.heart" code="script.ServiceCharge"/> -->
              
         <!-- SET dodaj zapiske k izbrani vrstici na računu --> 
-	<button key="button.sendorder" code="script.AddLineNote"/>
+	<button key="button.linenote" image="img.edit" code="script.AddLineNote"/> 
                       
-	<!-- SET Line or Total Discount (Default=TotalDiscount= ENABLED) -->
+	<!-- SET popust na celotni račun ali na vrstico v računu (Default=linediscount= ENABLED) -->
 	<!-- <button key="button.totaldiscount" image="img.discount" code="script.totaldiscount"/> -->
 	<button key="button.linediscount" name="button.Discount" image="img.discount" code="script.linediscount"/>  
 
 	<!-- SET Waiter's name (Default=DISABLED) -->
-	<!--<button key="button.setperson" image="img.user" code="script.SetPerson"/>-->
+	<!-- <button key="button.setperson" image="img.user" code="script.SetPerson"/> -->
+        
+        <!-- SET consolidate receipt - zdruši vse vrstice z enakimi artikli (Default=DISABLED) -->
+	<!-- <button key="button.consolidate" image="img.consolidate" code="script.ReceiptConsolidate.txt"/> -->
 
 	<!-- SET Remote Printer (Default=DISABLED) Not required for John L changes--> 
 	<!-- <button key="button.sendorder" image="img.kit_print" code="script.SendOrder"/>--> 
 
-	<!-- SET Ticket Print Preview (Default=ENABLED) -->
+	<!-- SET button natisni informativni predračun (Default=ENABLED) -->
     	<button key="button.print" titlekey="button.infoprint" image="img.ticket_print" template="Printer.TicketInfoPrint"/>
 
-	<!-- SET Open Cashdrawer (Default=ENABLED) -->
-	<button key="button.opendrawer" titlekey="button.drawer" template="Printer.OpenDrawer"/>
+	<!-- SET button odpri blagajno (Default=ENABLED) -->
+	<button key="button.opendrawer" titlekey="button.drawer" image="img.cashdrawer" template="Printer.OpenDrawer"/>
             <!-- onemogočeno  image="img.cashdrawer"  -->
         
 <!-- END Sales Ticket Button Bar - Show icons -->
