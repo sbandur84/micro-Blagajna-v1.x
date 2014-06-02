@@ -63,11 +63,11 @@ public class AppConfig implements AppProperties {
         this.configfile = configfile;
         m_propsconfig = new Properties();
 
-        logger.log(Level.INFO, "Reading configuration file: {0}", configfile.getAbsolutePath());
+        logger.log(Level.INFO, "Berem nastavitveno datoteko: {0}", configfile.getAbsolutePath());
     }
     
     private File getDefaultConfig() {
-        return new File(new File(System.getProperty("user.home")), AppLocal.APP_ID + ".properties");
+        return new File(new File(System.getProperty("user.home")), AppLocal.APP_ID + ".conf");
     }
     
     /**
@@ -173,7 +173,7 @@ public class AppConfig implements AppProperties {
         
         OutputStream out = new FileOutputStream(configfile);
         if (out != null) {
-            m_propsconfig.store(out, AppLocal.APP_NAME + ". Configuration file.");
+            m_propsconfig.store(out, AppLocal.APP_NAME + ". Nastavitvena datoteka.");
             out.close();
         }
     }
@@ -224,8 +224,8 @@ public class AppConfig implements AppProperties {
         m_propsconfig.setProperty("user.country", l.getCountry());
         m_propsconfig.setProperty("user.variant", l.getVariant());     
         
-        m_propsconfig.setProperty("swing.defaultlaf", System.getProperty("swing.defaultlaf", "javax.swing.plaf.metal.MetalLookAndFeel"));
-//        m_propsconfig.setProperty("swing.defaultlaf", System.getProperty("swing.defaultlaf", "javax.swing.plaf.synth.SynthLookAndFeel"));        
+//        m_propsconfig.setProperty("swing.defaultlaf", System.getProperty("swing.defaultlaf", "javax.swing.plaf.metal.MetalLookAndFeel"));
+        m_propsconfig.setProperty("swing.defaultlaf", System.getProperty("swing.defaultlaf", "com.sun.java.swing.plaf.gtk.GTKLookAndFeel"));        
         
         m_propsconfig.setProperty("machine.printer", "screen");
         m_propsconfig.setProperty("machine.printer.2", "Not defined");
@@ -236,7 +236,7 @@ public class AppConfig implements AppProperties {
                 
         m_propsconfig.setProperty("machine.display", "screen");
         m_propsconfig.setProperty("machine.scale", "Not defined");
-        m_propsconfig.setProperty("machine.screenmode", "window"); // fullscreen / window
+        m_propsconfig.setProperty("machine.screenmode", "fullscreen"); // fullscreen / window
         m_propsconfig.setProperty("machine.ticketsbag", "standard");
         m_propsconfig.setProperty("machine.scanner", "Not defined");
         
@@ -269,6 +269,8 @@ public class AppConfig implements AppProperties {
 
         m_propsconfig.setProperty("machine.uniqueinstance", "false");
         
+        // dodatne nastavitve mikroBlagajna
+        m_propsconfig.setProperty("gtk-icon-sizes", "12");
 
     }
 }

@@ -55,8 +55,7 @@ public class JPanelConfigLocale extends javax.swing.JPanel implements PanelConfi
         
         List<Locale> availablelocales = new ArrayList<Locale>();
         availablelocales.addAll(Arrays.asList(Locale.getAvailableLocales())); // Available java locales
-        addLocale(availablelocales, new Locale("eu", "ES", "")); // Basque
-        addLocale(availablelocales, new Locale("gl", "ES", "")); // Gallegan
+        addLocale(availablelocales, new Locale("sl", "SI", "")); // Slovenščina
         
         Collections.sort(availablelocales, new LocaleComparator());
         
@@ -65,19 +64,20 @@ public class JPanelConfigLocale extends javax.swing.JPanel implements PanelConfi
             jcboLocale.addItem(new LocaleInfo(l));
         }
         
-        jcboInteger.addItem(DEFAULT_VALUE);
-        jcboInteger.addItem("#0");
+        //jcboInteger.addItem(DEFAULT_VALUE);
         jcboInteger.addItem("#,##0");
+        jcboInteger.addItem("#0");
         
-        jcboDouble.addItem(DEFAULT_VALUE);
-        jcboDouble.addItem("#0.0");
-        jcboDouble.addItem("#,##0.#");
         
-        jcboCurrency.addItem(DEFAULT_VALUE);
-        jcboCurrency.addItem("\u00A4 #0.00");
+        //jcboDouble.addItem(DEFAULT_VALUE);
+        jcboDouble.addItem("#0.00");
+        jcboDouble.addItem("#,##0.##");
+        
+        //jcboCurrency.addItem(DEFAULT_VALUE);
+        jcboCurrency.addItem("#,##0.00 '€'");
         jcboCurrency.addItem("'$' #,##0.00");
         
-        jcboPercent.addItem(DEFAULT_VALUE);
+        //jcboPercent.addItem(DEFAULT_VALUE);
         jcboPercent.addItem("#,##0.##%");
         
         jcboDate.addItem(DEFAULT_VALUE);

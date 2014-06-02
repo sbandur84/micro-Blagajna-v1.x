@@ -286,7 +286,7 @@ public class CustomersPayment extends javax.swing.JPanel implements JPanelView, 
 
         btnCustomer.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/openbravo/images/customer_sml.png"))); // NOI18N
         java.util.ResourceBundle bundle = java.util.ResourceBundle.getBundle("pos_messages"); // NOI18N
-        btnCustomer.setToolTipText(bundle.getString("button.Račun stranke")); // NOI18N
+        btnCustomer.setToolTipText(bundle.getString("button.customeraccount")); // NOI18N
         btnCustomer.setFocusPainted(false);
         btnCustomer.setFocusable(false);
         btnCustomer.setMargin(new java.awt.Insets(8, 14, 8, 14));
@@ -315,7 +315,7 @@ public class CustomersPayment extends javax.swing.JPanel implements JPanelView, 
         btnPay.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         btnPay.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/openbravo/images/pay.png"))); // NOI18N
         btnPay.setText(AppLocal.getIntString("button.pay")); // NOI18N
-        btnPay.setToolTipText("Pay Account");
+        btnPay.setToolTipText(bundle.getString("button.payaccount")); // NOI18N
         btnPay.setFocusPainted(false);
         btnPay.setFocusable(false);
         btnPay.setMargin(new java.awt.Insets(8, 14, 8, 14));

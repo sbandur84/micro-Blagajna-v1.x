@@ -40,10 +40,10 @@ public class AppLocal {
     /**
      *
      */
-    public static final String APP_VERSION = "1.0";
+    public static final String APP_VERSION = "1.09";
 
 
-    public static final String APP_VERSION_BUILD="100";
+    public static final String APP_VERSION_BUILD="136";
   
   
     // private static List<ResourceBundle> m_messages;

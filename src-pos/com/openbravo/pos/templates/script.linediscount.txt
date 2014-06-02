@@ -38,7 +38,7 @@ if (index >= 0) {
         sdiscount = Formats.PERCENT.formatValue(discountrate);
         ticket.insertLine(index + 1,
             new TicketLineInfo(
-                    "- Popust " + sdiscount + " na "+Formats.CURRENCY.formatValue(line.getPrice()*line.getMultiply()),
+                    "- Popust " + sdiscount + " na "+Formats.CURRENCY.formatValue(line.getPriceTax()*line.getMultiply()),
                     line.getProductTaxCategoryID(),
                     line.getMultiply(),
                     -(double)Math.round(line.getPrice() * discountrate * 100) / 100,

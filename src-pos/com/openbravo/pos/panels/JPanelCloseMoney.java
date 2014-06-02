@@ -612,6 +612,7 @@ public class JPanelCloseMoney extends JPanel implements JPanelView, BeanFactoryA
         m_jCloseCash.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         m_jCloseCash.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/openbravo/images/calculator.png"))); // NOI18N
         m_jCloseCash.setText(AppLocal.getIntString("Button.CloseCash")); // NOI18N
+        m_jCloseCash.setToolTipText(bundle.getString("tooltip.closecash")); // NOI18N
         m_jCloseCash.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         m_jCloseCash.setIconTextGap(2);
         m_jCloseCash.setInheritsPopupMenu(true);
